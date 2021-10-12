@@ -1,2 +1,2 @@
-# AidanTrue.github.io :)
+# AidanTrue.github.io
 
