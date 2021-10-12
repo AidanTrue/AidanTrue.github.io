@@ -1,3 +1,2 @@
-# AidanTrue.github.io
+# AidanTrue.github.io :)
 
-sam is shit at compsci
