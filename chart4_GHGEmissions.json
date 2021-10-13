@@ -1,0 +1,642 @@
+{
+    "header": {
+    "id": "08e3d0aa-f9e3-4b35-afbb-e97ef1ebf343",
+    "test": false,
+    "prepared": "2021-10-13T10:39:13.4072685Z",
+    "sender": {
+    "id": "OECD",
+    "name": "Organisation for Economic Co-operation and Development"
+    },
+    "links": [
+    {
+    "href": "https://stats.oecd.org:443/SDMX-JSON/data/AEA/AUS+CAN+FIN+FRA+DEU+ITA+KOR+GBR.GHG.IND-TOTAL.TCO2+T+TNO2+TSO2+TNMVOC/all?startTime=2009&endTime=2020&dimensionAtObservation=allDimensions&pid=40ff8c9e-1389-48b4-a20f-780cdeb4e780",
+    "rel": "request"
+    }
+    ]
+    },
+    "dataSets": [
+    {
+    "action": "Information",
+    "observations": {
+    "0:0:0:0:0": [
+    517762200,
+    0,
+    null
+    ],
+    "0:0:0:0:1": [
+    502780200,
+    0,
+    null
+    ],
+    "0:0:0:0:2": [
+    490983300,
+    0,
+    null
+    ],
+    "0:0:0:0:3": [
+    475160400,
+    0,
+    null
+    ],
+    "0:0:0:0:4": [
+    479145000,
+    0,
+    null
+    ],
+    "0:0:0:0:5": [
+    483354900,
+    0,
+    null
+    ],
+    "0:0:0:0:6": [
+    486292500,
+    0,
+    null
+    ],
+    "1:0:0:0:0": [
+    598129000,
+    0,
+    null
+    ],
+    "1:0:0:0:1": [
+    610503000,
+    0,
+    null
+    ],
+    "1:0:0:0:2": [
+    618522000,
+    0,
+    null
+    ],
+    "1:0:0:0:3": [
+    627191000,
+    0,
+    null
+    ],
+    "1:0:0:0:4": [
+    634648000,
+    0,
+    null
+    ],
+    "1:0:0:0:5": [
+    638490000,
+    0,
+    null
+    ],
+    "1:0:0:0:6": [
+    641922000,
+    0,
+    null
+    ],
+    "1:0:0:0:7": [
+    622888000,
+    0,
+    null
+    ],
+    "1:0:0:0:8": [
+    632590000,
+    0,
+    null
+    ],
+    "1:0:0:0:9": [
+    643461000,
+    0,
+    null
+    ],
+    "2:0:0:0:0": [
+    374749359,
+    0,
+    null
+    ],
+    "2:0:0:0:1": [
+    379726084,
+    0,
+    null
+    ],
+    "2:0:0:0:2": [
+    363274375,
+    0,
+    null
+    ],
+    "2:0:0:0:3": [
+    363132086,
+    0,
+    null
+    ],
+    "2:0:0:0:4": [
+    365276500,
+    0,
+    null
+    ],
+    "2:0:0:0:5": [
+    344890773,
+    0,
+    null
+    ],
+    "2:0:0:0:6": [
+    344920857,
+    0,
+    null
+    ],
+    "2:0:0:0:7": [
+    342124623,
+    0,
+    null
+    ],
+    "2:0:0:0:8": [
+    348091014,
+    0,
+    null
+    ],
+    "2:0:0:0:9": [
+    334275956,
+    0,
+    null
+    ],
+    "2:0:0:0:10": [
+    330936868,
+    0,
+    null
+    ],
+    "3:0:0:0:0": [
+    64191303,
+    0,
+    null
+    ],
+    "3:0:0:0:1": [
+    72122072,
+    0,
+    null
+    ],
+    "3:0:0:0:2": [
+    64685877,
+    0,
+    null
+    ],
+    "3:0:0:0:3": [
+    59003313,
+    0,
+    null
+    ],
+    "3:0:0:0:4": [
+    59785671,
+    0,
+    null
+    ],
+    "3:0:0:0:5": [
+    55435937,
+    0,
+    null
+    ],
+    "3:0:0:0:6": [
+    52201865,
+    0,
+    null
+    ],
+    "3:0:0:0:7": [
+    55346326,
+    0,
+    null
+    ],
+    "3:0:0:0:8": [
+    52749308,
+    0,
+    null
+    ],
+    "3:0:0:0:9": [
+    54112677,
+    0,
+    null
+    ],
+    "3:0:0:0:10": [
+    50771433,
+    0,
+    null
+    ],
+    "4:0:0:0:0": [
+    772251321,
+    0,
+    null
+    ],
+    "4:0:0:0:1": [
+    799805794,
+    0,
+    null
+    ],
+    "4:0:0:0:2": [
+    786990635,
+    0,
+    null
+    ],
+    "4:0:0:0:3": [
+    794189176,
+    0,
+    null
+    ],
+    "4:0:0:0:4": [
+    804021207,
+    0,
+    null
+    ],
+    "4:0:0:0:5": [
+    779468592,
+    0,
+    null
+    ],
+    "4:0:0:0:6": [
+    779712309,
+    0,
+    null
+    ],
+    "4:0:0:0:7": [
+    781197466,
+    0,
+    null
+    ],
+    "4:0:0:0:8": [
+    746757147,
+    0,
+    null
+    ],
+    "4:0:0:0:9": [
+    721185732,
+    0,
+    null
+    ],
+    "4:0:0:0:10": [
+    670623858,
+    0,
+    null
+    ],
+    "5:0:0:0:0": [
+    391596614,
+    0,
+    null
+    ],
+    "5:0:0:0:1": [
+    399917142,
+    0,
+    null
+    ],
+    "5:0:0:0:2": [
+    393052178,
+    0,
+    null
+    ],
+    "5:0:0:0:3": [
+    376877131,
+    0,
+    null
+    ],
+    "5:0:0:0:4": [
+    343759086,
+    0,
+    null
+    ],
+    "5:0:0:0:5": [
+    326590467,
+    0,
+    null
+    ],
+    "5:0:0:0:6": [
+    334887632,
+    0,
+    null
+    ],
+    "5:0:0:0:7": [
+    332707229,
+    0,
+    null
+    ],
+    "5:0:0:0:8": [
+    334906531,
+    0,
+    null
+    ],
+    "5:0:0:0:9": [
+    329177687,
+    0,
+    null
+    ],
+    "5:0:0:0:10": [
+    320346566,
+    0,
+    null
+    ],
+    "6:0:0:0:0": [
+    512332500,
+    0,
+    null
+    ],
+    "6:0:0:0:1": [
+    520830100,
+    0,
+    null
+    ],
+    "6:0:0:0:2": [
+    498615400,
+    0,
+    null
+    ],
+    "6:0:0:0:3": [
+    503959600,
+    0,
+    null
+    ],
+    "6:0:0:0:4": [
+    489272000,
+    0,
+    null
+    ],
+    "6:0:0:0:5": [
+    469104100,
+    0,
+    null
+    ],
+    "6:0:0:0:6": [
+    455036800,
+    0,
+    null
+    ],
+    "6:0:0:0:7": [
+    430071000,
+    0,
+    null
+    ],
+    "6:0:0:0:8": [
+    419043700,
+    0,
+    null
+    ],
+    "6:0:0:0:9": [
+    419756200,
+    0,
+    null
+    ],
+    "6:0:0:0:10": [
+    403835100,
+    0,
+    null
+    ],
+    "6:0:0:0:11": [
+    549328500,
+    0,
+    null
+    ],
+    "7:0:0:0:0": [
+    535050000,
+    0,
+    null
+    ],
+    "7:0:0:0:1": [
+    592667300,
+    0,
+    null
+    ],
+    "7:0:0:0:2": [
+    620862000,
+    0,
+    null
+    ],
+    "7:0:0:0:3": [
+    629150000,
+    0,
+    null
+    ],
+    "7:0:0:0:4": [
+    639595120,
+    0,
+    null
+    ],
+    "7:0:0:0:5": [
+    640404600,
+    0,
+    null
+    ],
+    "7:0:0:0:6": [
+    641016500,
+    0,
+    null
+    ]
+    }
+    }
+    ],
+    "structure": {
+    "links": [
+    {
+    "href": "https://stats.oecd.org/SDMX-JSON/dataflow/AEA/all",
+    "rel": "dataflow"
+    }
+    ],
+    "name": "Air Emission Accounts",
+    "description": "Air Emission Accounts",
+    "dimensions": {
+    "observation": [
+    {
+    "keyPosition": 0,
+    "id": "COUNTRY",
+    "name": "Country",
+    "values": [
+    {
+    "id": "AUS",
+    "name": "Australia"
+    },
+    {
+    "id": "CAN",
+    "name": "Canada"
+    },
+    {
+    "id": "FRA",
+    "name": "France"
+    },
+    {
+    "id": "FIN",
+    "name": "Finland"
+    },
+    {
+    "id": "DEU",
+    "name": "Germany"
+    },
+    {
+    "id": "ITA",
+    "name": "Italy"
+    },
+    {
+    "id": "GBR",
+    "name": "United Kingdom"
+    },
+    {
+    "id": "KOR",
+    "name": "Korea"
+    }
+    ]
+    },
+    {
+    "keyPosition": 1,
+    "id": "POLLUTANT",
+    "name": "Pollutant",
+    "values": [
+    {
+    "id": "GHG",
+    "name": "Greenhouse gases Total "
+    }
+    ]
+    },
+    {
+    "keyPosition": 2,
+    "id": "ACTIVITY",
+    "name": "Activity ",
+    "values": [
+    {
+    "id": "IND-TOTAL",
+    "name": "Total Industry ISIC rev. 4"
+    }
+    ]
+    },
+    {
+    "keyPosition": 3,
+    "id": "MEASURE",
+    "name": "Measure",
+    "values": [
+    {
+    "id": "TCO2",
+    "name": "tonnes of CO2-equivalent"
+    }
+    ]
+    },
+    {
+    "id": "TIME_PERIOD",
+    "name": "Year",
+    "values": [
+    {
+    "id": "2009",
+    "name": "2009"
+    },
+    {
+    "id": "2010",
+    "name": "2010"
+    },
+    {
+    "id": "2011",
+    "name": "2011"
+    },
+    {
+    "id": "2012",
+    "name": "2012"
+    },
+    {
+    "id": "2013",
+    "name": "2013"
+    },
+    {
+    "id": "2014",
+    "name": "2014"
+    },
+    {
+    "id": "2015",
+    "name": "2015"
+    },
+    {
+    "id": "2016",
+    "name": "2016"
+    },
+    {
+    "id": "2017",
+    "name": "2017"
+    },
+    {
+    "id": "2018",
+    "name": "2018"
+    },
+    {
+    "id": "2019",
+    "name": "2019"
+    },
+    {
+    "id": "2020",
+    "name": "2020"
+    }
+    ],
+    "role": "TIME_PERIOD"
+    }
+    ]
+    },
+    "attributes": {
+    "dataSet": [
+    {
+    "id": "UNIT",
+    "name": "Unit",
+    "values": [
+    {
+    "id": "TONNE",
+    "name": "Tonnes"
+    }
+    ],
+    "role": "UNIT_MEASURE"
+    },
+    {
+    "id": "POWERCODE",
+    "name": "Unit multiplier",
+    "values": [
+    {
+    "id": "0",
+    "name": "Units"
+    }
+    ],
+    "role": "UNIT_MULT"
+    },
+    {
+    "id": "REFERENCEPERIOD",
+    "name": "Reference period",
+    "values": [],
+    "role": "BASE_PER"
+    }
+    ],
+    "series": [],
+    "observation": [
+    {
+    "id": "TIME_FORMAT",
+    "name": "Time Format",
+    "values": [
+    {
+    "id": "P1Y",
+    "name": "Annual"
+    }
+    ]
+    },
+    {
+    "id": "OBS_STATUS",
+    "name": "Observation Status",
+    "values": []
+    }
+    ]
+    },
+    "annotations": [
+    {
+    "title": "Copyright OECD - All rights reserved",
+    "uri": "",
+    "text": ""
+    },
+    {
+    "title": "Terms and Conditions",
+    "uri": "http://www.oecd.org/termsandconditions/",
+    "text": ""
+    },
+    {
+    "title": "Privacy Policy",
+    "uri": "http://www.oecd.org/privacy/",
+    "text": ""
+    },
+    {
+    "title": "MyOECD",
+    "uri": "https://www.oecd.org/login",
+    "text": ""
+    },
+    {
+    "title": "Contact Us",
+    "uri": "http://www.oecd.org/contact/",
+    "text": ""
+    }
+    ]
+    }
+    }
