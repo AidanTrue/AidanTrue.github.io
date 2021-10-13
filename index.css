@@ -5,7 +5,7 @@
 /* This is my first proper css file */
 
 body{
-    background-color: rgb(0, 5, 92);
+    background-color: rgb(0, 3, 54);
 }
 
 h1, h3, p{
@@ -15,7 +15,7 @@ h1, h3, p{
 
 .chart{
     background-color: white;
-    width:330px;
+    width: 450px;
     border-width: 10px;
     border-style: solid;
     border-radius: 5px;
