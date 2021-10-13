@@ -11,6 +11,8 @@
     <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.1.1"></script>
     <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.18.2"></script>
 
+    <link rel="stylesheet" href="CSS1.css">
+
 </head>
 
 <! //////////// HEAD //////////// >
@@ -19,8 +21,10 @@
 <! //////////// START BODY //////////// >
 
 <body>
-
+<h1> Welcome to Aidan True's Data Science Project</h1>
 <!-- CHART 1 -->
+<p> This is an interactive graph showing Covid-19 cases in different UK regions</p>
+
 <div class="chart" id="chart1">
         <script>
             var myChart1 = "chart1_covidUKRegions.json";
@@ -30,6 +34,8 @@
 
 
 <!-- CHART 2 -->
+<p> This is a simple time series of UK Labour Productivity<p>
+
 <div class="chart" id="chart2">
     <script>
         var myChart2 = "chart2_ukProductivity.json";
@@ -39,6 +45,8 @@
 
 
 <!-- CHART 3 -->
+<p> This is a Multi-Line graph showing population growth rates for different countries<p>
+
 <div class="chart" id="chart3">
     <script>
         var myChart3 = "chartLine3.json";
