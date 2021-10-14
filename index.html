@@ -23,7 +23,7 @@
 <body>
 <h1> Welcome to Aidan True's Data Science Project</h1>
 <!-- CHART 1 -->
-<p> This is an interactive graph showing Covid-19 cases in different UK regions</p>
+<h3> This is an interactive graph showing Covid-19 cases in different UK regions</h3>>
 
 <div class="chart" id="chart1">
         <script>
@@ -34,7 +34,7 @@
 
 
 <!-- CHART 2 -->
-<p> This is a simple time series of UK Labour Productivity<p>
+<h3> This is a simple time series of UK Labour Productivity </h3>
 
 <div class="chart" id="chart2">
     <script>
@@ -45,7 +45,7 @@
 
 
 <!-- CHART 3 -->
-<p> This is a Multi-Line graph showing population growth rates for different countries<p>
+<h3> This is a Multi-Line graph showing population growth rates for different countries</h3>
 
 <div class="chart" id="chart3">
     <script>
@@ -55,8 +55,8 @@
 </div>
 
 <!-- CHART 4 -->
-<p> This is a graph showing Monthly Temperature Anomolies</p>
-
+<h3> This is a graph showing Monthly Covid Cases in different cities</h3>
+<p> This graph is hosted on an online API so it automatically updates every day. </p>
 <div class="chart" id="chart4">
         <script>
             var myChart4 = "chart4.json";
@@ -65,6 +65,19 @@
     </div>
 
 </body>
+
+<!-- CHART 5 -->
+<h3> This is a graph showing Monthly Covid Cases in the 5 largest UK cities</h3>
+<p> This graph is hosted via my GitHub Repository. </p>
+<div class="chart" id="chart5">
+        <script>
+            var myChart4 = "chart5.json";
+            vegaEmbed ('#chart5', myChart5);
+        </script>
+    </div>
+
+</body>
+
 
 <! //////////// END BODY //////////// >
 

@@ -9,14 +9,14 @@
     "color": "black"
   },
   "data": {
-    "url": "https://api.coronavirus.data.gov.uk/v2/data?areaType=ltla&metric=newCasesBySpecimenDate&format=csv",
+    "url": "https://github.com/AidanTrue/AidanTrue.github.io/blob/main/ltla_2021-10-13.csv",
     "format": {"type": "csv"}
   },
   "transform": [
     {
       "filter": {
         "field": "areaName",
-        "oneOf": ["Bristol, City of", "Croydon", "Cardiff", "City of Edinburgh", "Belfast"]
+        "oneOf": ["London", "Birmingham", "Glasgow", "Liverpool", "Belfast"]
       }
     }
   ],
