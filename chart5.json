@@ -9,14 +9,14 @@
     "color": "black"
   },
   "data": {
-    "url": "https://raw.githubusercontent.com/AidanTrue/AidanTrue.github.io/blob/main/ltla_2021-10-13.csv",
+    "url": "https://raw.githubusercontent.com/AidanTrue/AidanTrue.github.io/main/ltla_2021-10-13.csv",
     "format": {"type": "csv"}
   },
   "transform": [
     {
       "filter": {
         "field": "areaName",
-        "oneOf": ["London", "Birmingham", "Glasgow", "Liverpool", "Belfast"]
+        "oneOf": ["Birmingham", "Glasgow City", "Liverpool", "Manchester"]
       }
     }
   ],
