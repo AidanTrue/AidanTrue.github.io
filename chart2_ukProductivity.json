@@ -21,6 +21,7 @@
     "point": false,
     "interpolate": "monotone",
     "color": "blueviolet"
+
   },
   "encoding": {
     "x": {

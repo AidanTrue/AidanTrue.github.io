@@ -4,17 +4,39 @@
 
 /* This is my first proper css file */
 
+
+/* ----- BODY ----- */
 body{
     background-color: rgb(0, 3, 54);
 }
 
+
+/* ----- HEADINGS & PARAGRAPHS ----- */
 h1, h2, h3, p{
     color:rgb(0, 217, 255);
     font-family: 'Cabin', sans-serif;
 }
 
+
+/* ----- BUTTONS ----- */
+.multibutton{background-color:rgb(0, 217, 255);
+    width: auto;
+    height: 150px;
+
+}
+
+.button{
+    background-color:  rgb(0, 3, 54);
+    width: 200px;
+    height: 100px;
+    margin: 10px
+    
+}
+
+
+
+/* ----- CHARTS ----- */
 .chart{
-    text-align: center;
     background-color: white;
     width: 450px;
     height: 450px;
@@ -24,6 +46,8 @@ h1, h2, h3, p{
     border-color: black;
 }
 
+
+/* ----- PARENT/CHILD FORMATTING ----- */
 .parent{
 
 }
