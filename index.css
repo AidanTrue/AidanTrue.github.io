@@ -16,6 +16,22 @@ h1, h3, p{
 .chart{
     background-color: white;
     width: 450px;
+    height: 450px;
+    border-width: 10px;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: black;
+}
+
+.parent{
+
+}
+
+.child{
+    vertical-align: top;
+    background-color: white;
+    width: 450px;
+    height: 450px;
     border-width: 10px;
     border-style: solid;
     border-radius: 5px;
