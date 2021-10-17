@@ -22,22 +22,27 @@
 <body>
     <h1 style="text-align:center;">Data Science</h1>
     <h2 style="text-align:center;">By Aidan True</h2>
-<!-- CHART 1 -->
-<h3>Week 1: Data Portfolio</h3>
-<p>Skills and concepts: Text editors, HTML, CSS, GitHub.</p>
+<!-- WEEK 1 -->
+<h2>Week 1: Data Portfolio</h2>
+<h3>Skills and concepts: Text editors, HTML, CSS, GitHub.</h3>
+<p>This week focussed on building a website and embedding automated & interactive charts </p>
+<p></p>
 
 <div class='parent'>
+   
     <div class='child'id="chart1">    
         <script>
             var myChart1 = "chart1_covidUKRegions.json";
             vegaEmbed ('#chart1', myChart1);
         </script></div>
+    
     <div class='child'id="chart2">
         <script>
             var myChart2 = "chart2_ukProductivity.json";
             vegaEmbed ('#chart2', myChart2);
         </script>
     </div>
+   
     <div class="child" id="chart3">
         <script>
             var myChart3 = "chartLine3.json";
@@ -46,30 +51,28 @@
     </div>
   </div>
 
-<!-- CHART 4 -->
-<h3> This is a graph showing Monthly Covid Cases in different cities</h3>
-<p> This graph is hosted on an online API so it automatically updates every day. </p>
-<div class="chart" id="chart4">
+<!-- WEEK 2 -->
+<h2>Week 2: Live Data</h2>
+<h3>Skills and concepts: APIs, Javascript, JSON, Vega-Lite, Charts.js.</h3>
+<p>This week focussed on producing our own charts; one hosted from an online API and one from the GitHub Repository</p>
+
+<div class='parent'>
+        <div class="child" id="chart4">
         <script>
             var myChart4 = "chart4.json";
             vegaEmbed ('#chart4', myChart4);
         </script>
     </div>
-
-</body>
-
-<!-- CHART 5 -->
-<h3> This is a graph showing Monthly Covid Cases in the 4 largest UK cities (not including London)</h3>
-<p> This graph is hosted via my GitHub Repository. </p>
-<div class="chart" id="chart5">
+    
+    <div class="child" id="chart5">
         <script>
             var myChart5 = "chart5.json";
             vegaEmbed ('#chart5', myChart5);
         </script>
     </div>
 
+</div>
 </body>
-
 
 <! //////////// END BODY //////////// >
 
