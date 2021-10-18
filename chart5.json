@@ -5,8 +5,7 @@
     "subtitle": "Number of new COVID cases by date",
     "subtitleFontStyle": "italic",
     "subtitleFontSize": 10,
-    "anchor": "start",
-    "color": "black"
+    "anchor": "start"
   },
   "data": {
     "url": "https://raw.githubusercontent.com/AidanTrue/AidanTrue.github.io/main/ltla_2021-10-13.csv",
@@ -22,6 +21,9 @@
   ],
   "height": 300,
   "width": 310,
+
+  "background": null,
+  
   "mark": {"type": "line", "point": false},
   "encoding": {
     "x": {
@@ -29,19 +31,21 @@
       "type": "temporal",
       "title": null,
       "axis": {"grid": false}
+      
     },
     "y": {
       "field": "newCasesBySpecimenDate",
       "type": "quantitative",
       "title": null,
       "axis": {"grid": false}
+
     },
-    "color": {
+    "color":{
       "field": "areaName",
       "type": "nominal",
       "scale": {"scheme": "set1"},
       "title": "Legend",
-      "legend": {"orient": "top-left", "fillColor": "#FcFdFd"}
+      "legend": {"orient": "top-left", "fillColor": "rgb(222, 250, 255)", "padding":{"expr": "5"},"cornerRadius":{"expr": "10"}}
     }
   }
 }

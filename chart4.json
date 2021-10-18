@@ -5,8 +5,7 @@
     "subtitle": "Number of new COVID cases by date",
     "subtitleFontStyle": "italic",
     "subtitleFontSize": 10,
-    "anchor": "start",
-    "color": "black"
+    "anchor": "start"
   },
   "data": {
     "url": "https://api.coronavirus.data.gov.uk/v2/data?areaType=ltla&metric=newCasesBySpecimenDate&format=csv",
@@ -22,6 +21,9 @@
   ],
   "height": 300,
   "width": 310,
+  
+  "background":null,
+  
   "mark": {"type": "line", "point": false},
   "encoding": {
     "x": {
@@ -41,7 +43,7 @@
       "type": "nominal",
       "scale": {"scheme": "set1"},
       "title": "Legend",
-      "legend": {"orient": "top-left", "fillColor": "#FcFdFd"}
+      "legend": {"orient": "top-left", "fillColor": "rgb(222, 250, 255)", "padding":{"expr": "5"},"cornerRadius":{"expr": "10"}}
     }
   }
 }

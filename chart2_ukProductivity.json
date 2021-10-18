@@ -8,22 +8,26 @@
     "subtitle":"Labour productivity. Output per hour worked, 2018==100. Source: ONS",
     "subtitleFontStyle":"italic",
     "subtitleFontSize":10,
-    "anchor": "start",
-    "color": "black"
+    "anchor": "start"
   },
   
   "data": {
     "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/ukMacro/GI4.DataHub.GrowthInnovationOutputperHour.csv"},
   "height": 300,
   "width": 345,
+  
+  "background":null,
+  
+
   "mark": {
     "type": "line",
     "point": false,
     "interpolate": "monotone",
-    "color": "blueviolet"
+    "color": "darkviolet"
 
   },
   "encoding": {
+    
     "x": {
       "field": "Date",
       "type": "temporal",
@@ -38,7 +42,9 @@
       "field": "Value",
       "type": "quantitative",
       "title": "",
-      "axis": {"grid": false}
+      "axis": {
+        "grid": false
+      }
     }
   }
 }

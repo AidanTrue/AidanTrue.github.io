@@ -38,46 +38,31 @@
     <h3>Skills and concepts: Text editors, HTML, CSS, GitHub.</h3>
     <p>This week focusses on building a website and embedding automated & interactive charts </p>
     
-    <table class='table'>
-        
-        <tr>
-            <th>Embedding an interactive graph</th>
-            <th>Embedding an automated graph</th>
-            <th>Embedding a graph chosen from the internet</th>
-        </tr>
-        
-        <tr>
-            <td>
-            <div class='chart'id="chart1"> 
+    <div class='parent'>
+
+            <div class='child1'id="chart1"> 
                 <script>
                     var myChart1 = "chart1_covidUKRegions.json";
                     vegaEmbed ('#chart1', myChart1);
                 </script>
             </div>
-            </td>
             
-            <td>    
-            <div class='chart'id="chart2">
+            <div class='child2'id='chart2'>
                 <script>
                     var myChart2 = "chart2_ukProductivity.json";
                     vegaEmbed ('#chart2', myChart2);
                 </script>
             </div>
-            </td>
             
-            <td>
-            <div class="chart" id="chart3">
+            <div class='child2'id="chart3">
                 <script>
                     var myChart3 = "chartLine3.json";
                     vegaEmbed ('#chart3', myChart3);
                 </script>
             </div>
-            </td>
-            
-        </tr>
-    
-    </table>
-    
+
+        </div>
+
 
 
 <!-- WEEK 2 -->
@@ -86,85 +71,29 @@
 <h3>Skills and concepts: APIs, Javascript, JSON, Vega-Lite, Charts.js.</h3>
 <p>This week focusses on producing our own charts; one hosted from an online API and one from the GitHub Repository</p>
 
-<table class='table'>
-    
-    <tr>
-      
-        <th>A graph running from an online API</th>
-        <th>A graph running from my GitHub Repository</th>
-    
-    </tr>
-      
-    <tr>
-        
-        <td>
-        <div class="chart" id="chart4">
-            <script>
-                 var myChart4 = "chart4.json";
-                vegaEmbed ('#chart4', myChart4);
-            </script>
-        </div>
-        </td>
-        
-        <td>
-        <div class="chart" id="chart5">
-            <script>
-                var myChart5 = "chart5.json";
-                vegaEmbed ('#chart5', myChart5);
-            </script>
-            </div>
-        </td>
-    
-    </tr>
-    
-</table>
+<div class='parent'>
 
+    <div class='child2'id="chart4"> 
+        <script>
+            var myChart4 = "chart4.json";
+           vegaEmbed ('#chart4', myChart4);
+       </script>
+    </div>
+    
+    <div class='child2'id='chart5'>
+        <script>
+            var myChart5 = "chart5.json";
+            vegaEmbed ('#chart5', myChart5);
+        </script>
+    </div>
+    
+
+    
+</div>
 <!-- WEEK 3 -->
 <h2>Week 3: API Data</h2>
 <h3>Skills and concepts: APIs, CORS, JSON.</h3>
 <p>This week focusses on accessing our data programmatically from APIs</p>
-
-<table class='table'>
-    
-    <tr>
-      <th>Graph 1</th>
-      <th>Graph 2</th>
-      <th>Graph 3</th>
-    </tr>
-      
-    <tr>
-        
-        <td>
-            <div class="chart" id="chart7">
-            <script>
-               
-            </script>
-            </div>
-
-        </td>
-        
-        <td>
-            <div class="chart" id="chart8">
-            <script>
-                
-            </script>
-            </div>
-
-        </td>
-        
-        <td>
-            <div class="chart" id="chart9">
-            <script>
-                
-            </script>
-            </div>
-        
-        </td>
-    
-    </tr>
-
-</table>
-
 
 
 </body>
