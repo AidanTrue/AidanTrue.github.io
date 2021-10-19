@@ -1,0 +1,42 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "description": "Popularity for More Investment in the Green Economy and Jobs among G20 Countries (%)",
+    "data": {
+      "values": [
+        {"G20 Countries": "United Kingdom", "% of Population in Support": 73}, {"G20 Countries": "Germany", "% of Population in Support": 68}, {"G20 Countries": "Australia", "% of Population in Support": 68},
+        {"G20 Countries": "Canada", "% of Population in Support": 68}, {"G20 Countries": "South Africa", "% of Population in Support": 65}, {"G20 Countries": "USA", "% of Population in Support": 57},
+        {"G20 Countries": "France", "% of Population in Support": 56}, {"G20 Countries": "Russia", "% of Population in Support": 48}, {"G20 Countries": "India", "% of Population in Support": 43}
+      ]
+    },
+    
+"title": {
+    "text":"Popularity for More Investment in the Green Economy and Jobs among G20 Countries (%)",
+    "subtitle":"Data Among G20 Countries (%). Source: UNDP and University of Oxford.",
+    "subtitleFontStyle":"italic",
+    "subtitleFontSize":10,
+    "anchor": "start",
+    "color": "black"
+},
+
+
+
+    "height": 300,
+    
+    "width": 600,
+    
+    "background": null,
+    
+    "mark": "bar",
+    "encoding": {
+      "x": {"field": "G20 Countries", "sort":"-y", "type": "nominal", "axis": {"labelAngle": 0}},
+      "y": {"field": "% of Population in Support", "type": "quantitative"},
+    
+      "color": {
+          
+    "field": "G20 Countries",
+    "type": "nominal",
+    "legend": null,
+    "scale": {"scheme": "category20b"}
+                }
+        }
+}

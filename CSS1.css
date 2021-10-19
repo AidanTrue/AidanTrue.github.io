@@ -16,6 +16,17 @@ p {
 	color: #ffffff;
 }
 
+
+/* Format my text */
+text {
+    font-family: "Cabin";
+	font-size: 18px;
+	margin: 0px 0px 10px;
+	line-height: 22.4px;
+	color: #ffffff;
+}
+
+
 /* Format my headings */
 h1 {
 	font-family: "Cabin";

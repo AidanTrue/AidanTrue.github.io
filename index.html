@@ -31,6 +31,10 @@
     <h1 style="text-align:center;">Data Science</h1>
     <h2 style="text-align:center;">By Aidan True</h2>
 
+    <!-- BUTTONS -->
+    
+   
+
 
     <!-- WEEK 1 -->
     
@@ -47,20 +51,25 @@
                 </script>
             </div>
             
-            <div class='child2'id='chart2'>
+            <div class='child2'>
+                <span>Graph!</span>
+                <div id="chart2">
                 <script>
                     var myChart2 = "chart2_ukProductivity.json";
                     vegaEmbed ('#chart2', myChart2);
                 </script>
             </div>
-            
-            <div class='child2'id="chart3">
+            </div>
+
+            <div class='child2'>
+            <span>Graph!</span>
+                <div id="chart3">
                 <script>
                     var myChart3 = "chartLine3.json";
                     vegaEmbed ('#chart3', myChart3);
                 </script>
             </div>
-
+            </div>  
         </div>
 
 
@@ -95,6 +104,27 @@
 <h3>Skills and concepts: APIs, CORS, JSON.</h3>
 <p>This week focusses on accessing our data programmatically from APIs</p>
 
+<!-- WEEK 4 -->
+<h2>Week 4: Scraping data</h2>
+<h3>Skills and concepts: Python, BeautifulSoup, HTML, Stata.</h3>
+<p>This week focusses on building scrapers to assit with extracting data from websites</p>
+
+<div class='parent'>
+
+    <div class='child1'id="chart6"> 
+        <script>
+            var myChart6 = "chart6.json";
+           vegaEmbed ('#chart6', myChart6);
+       </script>
+    </div>
+    
+    <div class='child2'id='chartxxx'>
+        <script>
+            var myChartxxx = "chartxxx.json";
+            vegaEmbed ('#chartxxx', myChartxxx);
+        </script>
+    </div>
+    
 
 </body>
 
