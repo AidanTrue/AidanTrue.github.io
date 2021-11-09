@@ -1,0 +1,45 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": {
+      "text": "UK Greenhouse Gas Emissions",
+      "subtitle": "Edited to Include Linear Decrease Required to Meet 6th Carbon Budget Goals",
+      "subtitleFontStyle": "italic",
+      "subtitleFontSize": 10,
+      "anchor": "start"
+    },
+    "data": {
+      "url": "https://raw.githubusercontent.com/AidanTrue/AidanTrue.github.io/main/UK_GHG_EMISSIONS.csv",
+      "format": {"type": "csv"}
+    },
+    "transform": [
+
+    ],
+    "height": 300,
+    "width": 891,
+  
+    "background": null,
+    
+    "mark": {"type": "line", "point": false},
+    "encoding": {
+      "x": {
+        "field": "Year",
+        "type": "temporal",
+        "title": null,
+        "axis": {"grid": false}
+        
+      },
+      "y": {
+        "field": "Total greenhouse gas emissions",
+        "type": "quantitative",
+        "title": null,
+        "axis": {"grid": false}
+  
+      },
+      "color":{
+        "type": "nominal",
+        "scale": {"scheme": "set1"},
+        "title": "Legend",
+        "legend": {"orient": "top-left", "fillColor": "rgb(222, 250, 255)", "padding":{"expr": "5"},"cornerRadius":{"expr": "10"}}
+      }
+    }
+  }
