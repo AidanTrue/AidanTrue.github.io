@@ -54,7 +54,7 @@ h1, h2, h3, p{
     font-family: 'Cabin', sans-serif;
     text-align: center;
     vertical-align: middle;
-    color: "null"
+    color: "null";
   
 }
 
@@ -70,17 +70,22 @@ h1, h2, h3, p{
     margin: 5px;
     padding: 10px;
     color:rgb(0, 23, 61); 
+    display: inline-block;
+
    
 }
 .child2{
     vertical-align: middle;
     background-color:rgb(189, 243, 252);
-    width: 410px;
+    width: 450px;
     height: 410px;
     border-color: rgb(189, 243, 252);
     border-width: 10px;
     border-style: solid;
     border-radius: 20px;
     margin: 15px;
+    padding: 10px;
     color:rgb(0, 23, 61); 
+    display: inline-block;
+
 }

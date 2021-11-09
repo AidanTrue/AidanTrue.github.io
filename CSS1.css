@@ -26,7 +26,6 @@ text {
 	color: #ffffff;
 }
 
-
 /* Format my headings */
 h1 {
 	font-family: "Cabin";
@@ -34,7 +33,9 @@ h1 {
 	color: #ffffff;
 	font-weight: 600;
 	margin: 30px 0px 30px 0px;
-}/* Format my heading */
+}
+
+/* Format my heading */
 h2 {
 	font-family: "Cabin";
 	font-size: 45px;
@@ -42,6 +43,7 @@ h2 {
 	font-weight: 400;
 	margin: 30px 0px 30px 0px;
 }
+
 /* Format my heading */
 h3 {
 	font-family: "Cabin";

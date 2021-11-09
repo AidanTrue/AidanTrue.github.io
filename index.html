@@ -41,19 +41,24 @@
     <h2>Week 1: Data Portfolio</h2>
     <h3>Skills and concepts: Text editors, HTML, CSS, GitHub.</h3>
     <p>This week focusses on building a website and embedding automated & interactive charts </p>
-    
-    <div class='parent'>
+    <p>Task: Upload three charts from Rapidcharts.io</p>
 
-            <div class='child1'id="chart1"> 
+    <div class='parent'>
+            <div class='child1'>
+                <p>This embeded graph is interactive</p>
+            <div id="chart1">
                 <script>
                     var myChart1 = "chart1_covidUKRegions.json";
                     vegaEmbed ('#chart1', myChart1);
                 </script>
             </div>
-            
+            </div>
+    </div>
+
+    <div class='parent'>       
             <div class='child2'>
-                <span>Graph!</span>
-                <div id="chart2">
+                <p>This embeded graph is automated</p>
+            <div id="chart2">
                 <script>
                     var myChart2 = "chart2_ukProductivity.json";
                     vegaEmbed ('#chart2', myChart2);
@@ -62,10 +67,10 @@
             </div>
 
             <div class='child2'>
-            <span>Graph!</span>
-                <div id="chart3">
+                <p>This is an embeded simple line graph</p>
+            <div id="chart3">
                 <script>
-                    var myChart3 = "chartLine3.json";
+                    var myChart3 = "Chart3_SimpleLine.json";
                     vegaEmbed ('#chart3', myChart3);
                 </script>
             </div>
@@ -78,44 +83,77 @@
 
 <h2>Week 2: Live Data</h2>
 <h3>Skills and concepts: APIs, Javascript, JSON, Vega-Lite, Charts.js.</h3>
-<p>This week focusses on producing our own charts; one hosted from an online API and one from the GitHub Repository</p>
+<p>This week focusses on producing our own charts, hosted two different ways</p>
+<p>Task: Embed two charts - one from an API and the other from the same data saved to the Github Repository</p>
 
 <div class='parent'>
 
-    <div class='child2'id="chart4"> 
+    <div class='child2'>
+        <p>This graph is hosted from an online API</p>
+    <div id="chart4"> 
         <script>
-            var myChart4 = "chart4.json";
+            var myChart4 = "Chart4_API1.json";
            vegaEmbed ('#chart4', myChart4);
        </script>
     </div>
+    </div>  
     
-    <div class='child2'id='chart5'>
+    <div class='child2'>
+        <p>This graph is hosted from a csv in my GitHub Repository</p>
+    <div id="chart5">
         <script>
-            var myChart5 = "chart5.json";
+            var myChart5 = "Chart5_CSV1.json";
             vegaEmbed ('#chart5', myChart5);
         </script>
     </div>
-    
+    </div>
 
-    
 </div>
+
 <!-- WEEK 3 -->
 <h2>Week 3: API Data</h2>
 <h3>Skills and concepts: APIs, CORS, JSON.</h3>
 <p>This week focusses on accessing our data programmatically from APIs</p>
+<p>Task: Add two more charts - one where you have edited the data and the other where the data has been entered ‘in-line’ manually.</p>
+
+<div class='parent'>
+
+    <div class='child2'>
+        <p>The data for this graph has been hosted on an API and then edited to add new data plots</p>
+    <div id="chart6">
+        <script>
+            var myChart6 = "Chart6_APIEdit.json";
+           vegaEmbed ('#chart6', myChart6);
+       </script>
+    </div>
+</div>
+
+    <div class='child1'>
+        <p>The data for this graph is 'in-line' on a .json file</p>
+    <div id="chart7">
+        <script>
+            var myChart7 = "Chart7_Inline.json";
+            vegaEmbed ('#chart7', myChart7);
+        </script>
+    </div>
+    </div>
+
+</div>
+
 
 <!-- WEEK 4 -->
 <h2>Week 4: Scraping data</h2>
 <h3>Skills and concepts: Python, BeautifulSoup, HTML, Stata.</h3>
 <p>This week focusses on building scrapers to assit with extracting data from websites</p>
+<p>Task: Embed two charts of your own design from two separate APIs that you sign up for & gain access to.</p>
 
 <div class='parent'>
 
-    <div class='child1'id="chart6"> 
+    <div class='child2'id='chartxxx'>
         <script>
-            var myChart6 = "chart6.json";
-           vegaEmbed ('#chart6', myChart6);
-       </script>
+            var myChartxxx = "chartxxx.json";
+            vegaEmbed ('#chartxxx', myChartxxx);
+        </script>
     </div>
     
     <div class='child2'id='chartxxx'>
