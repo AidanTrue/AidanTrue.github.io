@@ -2,7 +2,7 @@
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "title": {
       "text": "UK Greenhouse Gas Emissions",
-      "subtitle": "Edited to Include Linear Decrease Required to Meet 6th Carbon Budget Goals",
+      "subtitle": "Edited to Include Linear Decrease From 2021-2035 Required to Meet 6th Carbon Budget Goals. Source: ONS, gov.uk",
       "subtitleFontStyle": "italic",
       "subtitleFontSize": 10,
       "anchor": "start"
@@ -14,12 +14,16 @@
     "transform": [
 
     ],
-    "height": 300,
-    "width": 891,
+    "height": 500,
+    "width": 800,
   
     "background": null,
     
-    "mark": {"type": "line", "point": false},
+    "mark": {
+        "type": "line",
+        "point": false,
+        "color": "darkviolet"},
+
     "encoding": {
       "x": {
         "field": "Year",
@@ -31,15 +35,7 @@
       "y": {
         "field": "Total greenhouse gas emissions",
         "type": "quantitative",
-        "title": null,
-        "axis": {"grid": false}
-  
-      },
-      "color":{
-        "type": "nominal",
-        "scale": {"scheme": "set1"},
-        "title": "Legend",
-        "legend": {"orient": "top-left", "fillColor": "rgb(222, 250, 255)", "padding":{"expr": "5"},"cornerRadius":{"expr": "10"}}
+        "title": "Mass of air emissions per annum in thousand tonnes of carbon dioxide equivalent"
       }
     }
   }
