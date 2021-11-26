@@ -18,6 +18,7 @@
 
     <link rel="stylesheet" href="CSS1.css">
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="project.html">
 
 </head>
 
@@ -28,12 +29,17 @@
 
 
 <body>
-    <h1 style="text-align:center;">Data Science</h1>
+    <h1 style="text-align:center;">Data Science: Portfolio</h1>
     <h2 style="text-align:center;">By Aidan True</h2>
 
     <!-- BUTTONS -->
-    
-   
+    <div class="parent">
+    <div class="pagination">
+        <a href="about.html">About</a>
+        <a class="active" href="index.html">Portfolio</a>
+        <a href="project.html">Project</a>
+      </div>
+    </div>
 
 
     <!-- WEEK 1 -->
@@ -148,13 +154,16 @@
 <p>Task: Embed two charts of your own design from two separate APIs that you sign up for & gain access to.</p>
 
 <div class='parent'>
-
-    <div class='child2'id='chartxxx'>
+    <div class='child1'>
+        <p>This is a graph from an API based around the environment & climate change</p>
+    <div id="chart8">
         <script>
-            var myChartxxx = "chartxxx.json";
-            vegaEmbed ('#chartxxx', myChartxxx);
+            var myChart8 = "Chart8_API2.json";
+            vegaEmbed ('#chart8', myChart8);
         </script>
     </div>
+    </div>
+</div>
     
     <div class='child2'id='chartxxx'>
         <script>

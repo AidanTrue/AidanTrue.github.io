@@ -15,6 +15,7 @@ body{
 h1, h2, h3, p{
     color:rgb(0, 23, 61);
     font-family: 'Cabin', sans-serif;
+    text-align: justify;
 }
 
 
@@ -89,3 +90,36 @@ h1, h2, h3, p{
     display: inline-block;
 
 }
+
+.pagination {
+    text-align: center;
+    vertical-align: middle;
+    border-width: 10px;
+    border-color: #00173D;
+}
+
+.pagination a {
+    border-width: 10px;
+    border-color: #00173D;
+    color: black;
+    font-family: 'Cabin', sans-serif;
+    text-align: center;
+    align-self: center;
+    vertical-align: middle;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+    border-radius: 5px;
+    font-size: 22px;
+    margin: 15px;
+  }
+  
+  .pagination a.active {
+    background-color: dodgerblue;
+    color: white;
+    border-radius: 5px;
+  }
+
+  .pagination a:hover:not(.active) {
+      background-color: #ddd;
+    }
