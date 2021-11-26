@@ -11,7 +11,7 @@ multi line comment */
 p {
     font-family: "Cabin";
 	font-size: 18px;
-	margin: 0px 0px 10px;
+	margin: 30px;
 	line-height: 25px;
 	color: #ffffff;
 }
@@ -21,7 +21,7 @@ p {
 text {
     font-family: "Cabin";
 	font-size: 18px;
-	margin: 0px 0px 10px;
+	margin: 30px;
 	line-height: 22.4px;
 	color: #ffffff;
 }
@@ -32,7 +32,7 @@ h1 {
 	font-size: 60px;
 	color: #ffffff;
 	font-weight: 600;
-	margin: 30px 0px 30px 0px;
+	margin: 30px ;
 }
 
 /* Format my heading */
@@ -41,7 +41,7 @@ h2 {
 	font-size: 45px;
 	color: #ffffff;
 	font-weight: 400;
-	margin: 30px 0px 30px 0px;
+	margin: 30px ;
 }
 
 /* Format my heading */
@@ -50,5 +50,5 @@ h3 {
 	font-size: 30px;
 	color: #ffffff;
 	font-weight: 200;
-	margin: 30px 0px 30px 0px;
+	margin: 30px;
 }
