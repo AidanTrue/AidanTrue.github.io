@@ -11,17 +11,26 @@ multi line comment */
 p {
     font-family: "Cabin";
 	font-size: 18px;
-	margin: 30px;
-	line-height: 25px;
+	margin: 0px 0px 10px;
+	line-height: 22.4px;
 	color: #ffffff;
 }
 
+h6 {
+    font-family: "Cabin";
+	font-size: 20px;
+	font-style: none;
+	font-weight: normal;
+	margin: 30px;
+	line-height: 22.4px;
+	color: #ffffff;
+}
 
 /* Format my text */
 text {
     font-family: "Cabin";
 	font-size: 18px;
-	margin: 30px;
+	margin: 0px 0px 10px;
 	line-height: 22.4px;
 	color: #ffffff;
 }
@@ -32,7 +41,7 @@ h1 {
 	font-size: 60px;
 	color: #ffffff;
 	font-weight: 600;
-	margin: 30px ;
+	margin: 30px;
 }
 
 /* Format my heading */
@@ -41,7 +50,7 @@ h2 {
 	font-size: 45px;
 	color: #ffffff;
 	font-weight: 400;
-	margin: 30px ;
+	margin: 30px;
 }
 
 /* Format my heading */

@@ -12,7 +12,7 @@ body{
 
 
 /* ----- HEADINGS & PARAGRAPHS ----- */
-h1, h2, h3, p{
+h1, h2, h3, h6, p{
     color:rgb(0, 23, 61);
     font-family: 'Cabin', sans-serif;
     text-align: justify;
@@ -115,7 +115,7 @@ h1, h2, h3, p{
   }
   
   .pagination a.active {
-    background-color: dodgerblue;
+    background-color: rgb(0, 23, 61);
     color: white;
     border-radius: 5px;
   }
