@@ -7,7 +7,7 @@
 
 /* ----- BODY ----- rgb(222, 250, 255);*/
 body{
-    background-color: rgb(236, 252, 255)
+    background-color: rgb(222, 250, 255)
 }
 
 
@@ -81,10 +81,10 @@ hr{  border: 2px solid #00173D;
 
 .child1{
     vertical-align: middle;
-    background-color:rgb(212, 249, 255);
+    background-color:rgb(189, 243, 252);
     width: auto;
     height: auto;
-    border-color: rgb(212, 249, 255);
+    border-color: rgb(189, 243, 252);
     border-width: 10px;
     border-style: solid;
     border-radius: 20px;
@@ -97,10 +97,10 @@ hr{  border: 2px solid #00173D;
 }
 .child2{
     vertical-align: middle;
-    background-color:rgb(212, 249, 255);
+    background-color:rgb(189, 243, 252);
     width: 400px;
     height: 400px;
-    border-color: rgb(212, 249, 255);
+    border-color: rgb(189, 243, 252);
     border-width: 10px;
     border-style: solid;
     border-radius: 20px;

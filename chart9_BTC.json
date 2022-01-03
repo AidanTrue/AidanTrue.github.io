@@ -1,0 +1,42 @@
+{"$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+
+  
+  "data": {"url": "https://rest.coinapi.io/v1/ohlcv/BTC/USD/history?period_id=1DAY&time_start=2020-01-01&limit=10000&include_empty_items=false&apikey=DB7B2328-3FE1-4E13-BF02-E5CF476666CD",
+   "format":{"type":"json"}
+   },
+ 
+   "title": {
+     "text": "BitCoin price in USD",
+     "subtitleFontStyle":"italic",
+     "subtitleFontSize":10,
+     "anchor": "start",
+     "color": "black"
+   },
+ 
+ 
+ 
+ 
+ 
+   "height": 300,
+   
+   "width": 800,
+ 
+   "background": null,
+   
+   "mark": {"type": "line", 
+     "width":10},
+ 
+ 
+ 
+   "encoding": {
+     "x": {"field": "time_period_start", "type": "temporal", "title": null},
+     "y": {
+       "field": "price_close",
+       "type": "quantitative",
+       "title": null
+     }
+       
+     
+   }
+ }
+ 
