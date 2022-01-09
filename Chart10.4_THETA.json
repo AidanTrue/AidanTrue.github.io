@@ -1,10 +1,10 @@
 {"$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "title": {
-      "text": "DOGE/USD",
+      "text": "THETA/USD",
       "anchor": "start"
     },
     "data": {
-      "url": "https://raw.githubusercontent.com/AidanTrue/AidanTrue.github.io/main/CryptoLoopedData-DOGE.json",
+      "url": "https://raw.githubusercontent.com/AidanTrue/AidanTrue.github.io/main/CryptoLoopedData-THETA.json",
       "format": {"type": "json"}
     },
 
