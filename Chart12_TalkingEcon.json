@@ -1,0 +1,46 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "description": "% Share of Reported Increased Domestic Workload",
+    "data": {
+      "values": [
+        {"Activity": "Childcare", "Women": 37, "Men": 26},{"Activity": "Teaching Children", "Women": 37, "Men": 28}, {"Activity": "Cooking", "Women": 37, "Men": 28},{"Activity": "Household Shopping", "Women": 24, "Men": 23}
+        ]},
+
+"title": {
+    "text":"Increase in Unpaid Care and Domestic Workloads, By Gender",
+    "subtitle":"Source: UN Women",
+    "subtitleFontStyle":"italic",
+    "subtitleFontSize":10,
+    "anchor": "start",
+    "color": "black"
+},
+
+    "repeat": {"layer": ["Women", "Men"]},
+   
+    "background":null,
+
+    "spec": {
+        
+        "height": 300,
+        "width": 500,
+ 
+        "mark": {
+            "type":"bar"},    
+  
+        "encoding": {
+            "x": {
+                "field": "Activity",
+                "type": "nominal",
+                "axis":{"labelAngle": 0}},
+    
+            "y": {
+                "field": {"repeat": "layer"},
+                "type": "quantitative",
+                "title": "% Share Who Reported Increased Domestic Workload"},
+    
+            "color": {
+                "datum": {"repeat": "layer"},
+                "scale": {"range": ["pink", "darkblue"]}}
+          } 
+      }
+  }

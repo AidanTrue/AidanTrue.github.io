@@ -20,23 +20,38 @@ h1, h2, h3, h6, p{
 
 
 /* ----- BUTTONS ----- */
-.multibutton{background-color:rgb(0, 23, 61);
-    width: 100%;
-    height: auto;
-    font-family: 'Cabin', sans-serif;
+.pagination {
     text-align: center;
     vertical-align: middle;
-    color: "null"
-  
+    border-width: 10px;
+    border-color: #00173D;
 }
 
-.button{
-    background-color:  rgb(122, 235, 255);
-    width: 200px;
-    height: 100px;
-    margin: 10px
-    
-}
+.pagination a {
+    border-width: 10px;
+    border-color: #00173D;
+    color: black;
+    font-family: 'Cabin', sans-serif;
+    text-align: center;
+    align-self: center;
+    vertical-align: middle;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+    border-radius: 5px;
+    font-size: 22px;
+    margin: 15px;
+  }
+  
+  .pagination a.active {
+    background-color: rgb(0, 23, 61);
+    color: white;
+    border-radius: 5px;
+  }
+
+  .pagination a:hover:not(.active) {
+      background-color: #ddd;
+    }
 
 
 /* ----- CHARTS ----- */
@@ -53,8 +68,6 @@ hr{  border: 2px solid #00173D;
     margin-top: 40px;
     margin-bottom: 40px;
 }
-
-
 
 /* ----- PARENT/CHILD FORMATTING ----- */
 
@@ -111,35 +124,26 @@ hr{  border: 2px solid #00173D;
 
 }
 
-.pagination {
+.fancy{
     text-align: center;
     vertical-align: middle;
+    display: inline-block;
+    border-color: rgb(212, 249, 255);
     border-width: 10px;
-    border-color: #00173D;
-}
-
-.pagination a {
-    border-width: 10px;
-    border-color: #00173D;
-    color: black;
-    font-family: 'Cabin', sans-serif;
-    text-align: center;
-    align-self: center;
-    vertical-align: middle;
-    padding: 8px 16px;
-    text-decoration: none;
-    transition: background-color .3s;
-    border-radius: 5px;
-    font-size: 22px;
-    margin: 15px;
-  }
+    border-style: double;
+    border-radius: 20px;
+    animation-name: Fancy;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;}
   
-  .pagination a.active {
-    background-color: rgb(0, 23, 61);
-    color: white;
-    border-radius: 5px;
+  
+  @keyframes Fancy {
+    0%   {border-color:red;}
+    25%  {border-color:yellow;}
+    50%  {border-color:blue;}
+    75%  {border-color:green;}
+    100% {border-color:red;}
   }
 
-  .pagination a:hover:not(.active) {
-      background-color: #ddd;
-    }
+
+
