@@ -1,0 +1,49 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": {
+      "text": "G20 Countries' Air Quility Index (AQI) Average in 2020",
+      "subtitle": "Source: IQAir",
+      "subtitleFontStyle": "italic",
+      "subtitleFontSize": 10,
+      "anchor": "start"
+    },
+    "data": {
+      "url": "https://raw.githubusercontent.com/AidanTrue/AidanTrue.github.io/main/2020 AQI Rankings.csv",
+      "format": {"type": "csv"}
+    },
+
+    "transform": [
+        {
+          "filter": {
+            "field": "Country",
+            "oneOf": [" India "," Indonesia "," China "," Saudi Arabia "," South Korea "," Argentina "," France "," Germany "," Japan "," Russia "," United Kingdom "," Canada "]
+
+
+
+          }
+        }
+      ],
+
+
+
+
+    "height": 300,
+    
+    "width": 800,
+    
+    "background": null,
+
+    "mark": "bar",
+    "encoding": {
+      "x": {"field": "Country", "sort":"-y", "type": "nominal", "axis": {"labelAngle": 0}},
+      "y": {"field": "AQI", "type": "quantitative"},
+      "color": {
+        "field": "Country",
+        "type": "nominal",
+        "legend": null,
+        "sort":"-y",
+        "scale": {"scheme":"Darkgold"}
+
+    }
+    }
+}
