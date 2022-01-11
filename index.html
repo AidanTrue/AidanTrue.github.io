@@ -28,10 +28,19 @@
 
 
 <body>
+    <! Here we have the text for our header >
     <h1>Data Science: Portfolio</h1>
     <h2>By Aidan True</h2>
+    
+    
+    <! These "hr" objects create the divider lines in the website>
     <hr>
+
     <!-- BUTTONS -->
+    <! This code creates the buttons that let the user navigate to different sections of the website, 
+    or to other relevant websites, such as the GitHub Repository or the Datascience Course Website.
+    This is done using Pagination>
+
     <div class="parent">
     <div class="pagination">
         <a href="about.html">About</a>
@@ -45,6 +54,10 @@
 
 
     <!-- WEEK 1 -->
+    <! Here we have the code that inputs our weekly homework tasks along with accompanying text. They have
+    been formatted into "parent" and "child" subclasses to aid with formatting. For each week I have explained 
+    the key skills & concepts learnt (from the RapidCharts DataScience website) along with the task presented.>
+    
     <h2>Week 1: Data Portfolio</h2>
     <h3>Skills and concepts: Text editors, HTML, CSS, GitHub.</h3>
     <h6>This week focusses on building a website and embedding automated & interactive charts </h6>
@@ -284,13 +297,14 @@
 
 <div class='parent'>
     <div class='child1'>
-        <p>This graph supports the argument "The pandemic widened gender inequalities" </p><p> made by Prof. Sarah Everard at the Talking Economics event in Bristol</p>
+        <p>This graph supports the argument "The pandemic widened gender inequalities" </p><p> made by Prof. Sarah Smith at the Talking Economics event in Bristol</p>
     <div id="chart12">
         <script>
             var myChart12 = "Chart12_TalkingEcon.json";
             vegaEmbed ('#chart12', myChart12);
         </script>
     </div>
+    <p>One of Prof. Sarah Smith's key points was that women took on the majority of extra household </p><p>work due to the pandemic. This data supports that view, showing an average of 11.4% absolute </p><p>difference in increased workload for women compared to men. </p>
     </div>
     </div>
 

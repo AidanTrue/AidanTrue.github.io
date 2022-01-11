@@ -3,7 +3,7 @@
     "description": "% Share of Reported Increased Domestic Workload",
     "data": {
       "values": [
-        {"Activity": "Childcare", "Women": 37, "Men": 26},{"Activity": "Teaching Children", "Women": 37, "Men": 28}, {"Activity": "Cooking", "Women": 37, "Men": 28},{"Activity": "Household Shopping", "Women": 24, "Men": 23}
+        {"Activity": "Cleaning", "Women": 49, "Men": 33},{"Activity": "Childcare", "Women": 37, "Men": 26},{"Activity": "Teaching Children", "Women": 37, "Men": 28}, {"Activity": "Cooking", "Women": 37, "Men": 28},{"Activity": "Household Shopping", "Women": 24, "Men": 23}
         ]},
 
 "title": {
