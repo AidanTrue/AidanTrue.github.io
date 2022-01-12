@@ -1,0 +1,109 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  
+  "title": {
+    "text": ["Correlation of Population against Renewable Energy as a Percentage","of Total Primary Energy Supply in 2018"],
+        "subtitle": "Source: OECD (2022), Renewable energy (indicator). OECD (2022), Population (indicator)",
+        "subtitleFontSize":10,
+        "anchor": "start",
+        "color": "black"
+      },
+  
+    "width":400,
+    "height":300,
+    "background":null,
+  
+    "data": {
+      "url": "https://raw.githubusercontent.com/AidanTrue/AidanTrue.github.io/main/PopulationVSRenewableNRG.csv"
+    },
+  
+    "layer": [{
+        
+        "mark": {
+          "type": "point",
+          "filled": true
+        },
+  
+  
+        "encoding": {
+          "x": {
+            "field": "RENEWABLEPC_PRYENRGSUPPLY",
+            "type": "quantitative",
+            "title":"Renewable Energy as a Fraction of Total Primary Energy Supply"
+          },
+          "y": {
+            "field": "POP_MLNPER",
+            "type": "quantitative",
+            "title": "Population (Millions)"
+          },
+         "color": {"field": "LOCATION", "type": "nominal", 
+         "legend":null,"scale": {"scheme": "yelloworangebrown"}},
+           "tooltip": {"field": "LOCATION", "type": "ordinal"}
+      }},
+        {
+        "mark": {
+          "type": "line",
+          "color": "darkviolet"
+        },
+  "transform": [
+          {
+            "regression": "POP_MLNPER",
+            "on": "RENEWABLEPC_PRYENRGSUPPLY"
+          }
+        ],
+        "encoding": {
+          "x": {
+            "field": "RENEWABLEPC_PRYENRGSUPPLY",
+            "type": "quantitative",
+            "axis": {"format":".1f"}
+          },
+          "y": {
+            "field": "POP_MLNPER",
+            "type": "quantitative"
+          }
+        }
+      },
+      {
+        "transform": [
+          {
+            "regression": "POP_MLNPER",
+            "on": "RENEWABLEPC_PRYENRGSUPPLY",
+            "params": true
+          },
+          {"calculate": "'R²: '+format(datum.rSquared, '.2f')", "as": "R2"}
+        ],
+        "mark": {
+          "type": "text",
+          "color": "darkviolet",
+          "x": "width",
+          "align": "right",
+          "y": -5
+        },
+        "encoding": {
+          "text": {"type": "nominal", "field": "R2"}
+        }
+      }
+  ,
+      {
+        "transform": [
+          {
+            "regression": "POP_MLNPER",
+            "on": "RENEWABLEPC_PRYENRGSUPPLY",
+            "params": true
+          },
+          {"calculate": "'R²: '+format(datum.rSquared, '.2f')", "as": "R2"}
+        ],
+        "mark": {
+          "type": "text",
+          "color": "darkviolet",
+          "x": "width",
+          "align": "right",
+          "y": -5
+        },
+        "encoding": {
+          "text": {"type": "nominal", "field": "R2"}
+        }
+      }
+    ]
+  }
+  
