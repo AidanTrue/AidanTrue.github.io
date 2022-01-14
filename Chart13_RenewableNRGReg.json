@@ -2,8 +2,8 @@
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   
   "title": {
-    "text": ["Correlation of Population against Renewable Energy as a Percentage","of Total Primary Energy Supply in 2018"],
-        "subtitle": "Source: OECD (2022), Renewable energy (indicator). OECD (2022), Population (indicator)",
+        "text": ["Correlation of Population against Renewable Energy as a Percentage","of Total Primary Energy Supply in 2018"],
+        "subtitle": "Source: OECD (2022), Renewable Energy (indicator). OECD (2022), Population (indicator)",
         "subtitleFontSize":10,
         "anchor": "start",
         "color": "black"
@@ -16,7 +16,10 @@
     "data": {
       "url": "https://raw.githubusercontent.com/AidanTrue/AidanTrue.github.io/main/PopulationVSRenewableNRG.csv"
     },
-  
+    
+  "transform": [{"calculate": "100*datum.RENEWABLEPC_PRYENRGSUPPLY", "as": "Renewable Energy (%)"},
+  {"calculate": "datum.POP_MLNPER", "as": "Population (Millions)"},
+  {"calculate": "datum.LOCATION", "as": "Country Code"}],
     "layer": [{
         
         "mark": {
@@ -27,9 +30,9 @@
   
         "encoding": {
           "x": {
-            "field": "RENEWABLEPC_PRYENRGSUPPLY",
+            "field": "Renewable Energy (%)",
             "type": "quantitative",
-            "title":"Renewable Energy as a Fraction of Total Primary Energy Supply"
+            "title":"Renewable Energy as a Percentage of Total Primary Energy Supply"
           },
           "y": {
             "field": "POP_MLNPER",
@@ -38,7 +41,10 @@
           },
          "color": {"field": "LOCATION", "type": "nominal", 
          "legend":null,"scale": {"scheme": "yelloworangebrown"}},
-           "tooltip": {"field": "LOCATION", "type": "ordinal"}
+           "tooltip": [
+            {"field": "Country Code"},
+            {"field": "Population (Millions)"},
+            {"field": "Renewable Energy (%)"}]
       }},
         {
         "mark": {
@@ -48,12 +54,12 @@
   "transform": [
           {
             "regression": "POP_MLNPER",
-            "on": "RENEWABLEPC_PRYENRGSUPPLY"
+            "on": "Renewable Energy (%)"
           }
         ],
         "encoding": {
           "x": {
-            "field": "RENEWABLEPC_PRYENRGSUPPLY",
+            "field": "Renewable Energy (%)",
             "type": "quantitative",
             "axis": {"format":".1f"}
           },
@@ -67,7 +73,7 @@
         "transform": [
           {
             "regression": "POP_MLNPER",
-            "on": "RENEWABLEPC_PRYENRGSUPPLY",
+            "on": "Renewable Energy (%)",
             "params": true
           },
           {"calculate": "'R²: '+format(datum.rSquared, '.2f')", "as": "R2"}
@@ -88,7 +94,7 @@
         "transform": [
           {
             "regression": "POP_MLNPER",
-            "on": "RENEWABLEPC_PRYENRGSUPPLY",
+            "on": "Renewable Energy (%)",
             "params": true
           },
           {"calculate": "'R²: '+format(datum.rSquared, '.2f')", "as": "R2"}
