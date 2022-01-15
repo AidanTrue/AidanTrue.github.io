@@ -15,10 +15,10 @@
     "color": "black"
 },
 
-    "repeat": {"layer": ["Women", "Men"]},
+"repeat": {"layer": ["Women", "Men"]},
    
     "background":null,
-
+    
     "spec": {
         
         "height": 300,

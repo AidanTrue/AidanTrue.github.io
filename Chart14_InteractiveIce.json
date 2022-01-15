@@ -1,0 +1,87 @@
+{"$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  
+  "description": "Coronavirus cases",
+  
+  "data": {
+    "url": "https://raw.githubusercontent.com/AidanTrue/AidanTrue.github.io/main/Sea%20Ice%20Extent%20(N%26S).csv",
+    "format": {"type": "csv", "parse":{"UTC Time":"utc:'%d %m %Y'"}}},
+
+  "title": {
+    "text": "Title",
+    "subtitle":"Subtitle",
+    "subtitleFontStyle":"italic",
+    "subtitleFontSize":10,
+    "anchor": "start",
+    "color": "black"
+  },
+
+
+
+  "height": 300,
+  
+  "width": 800,
+
+  "background": null,
+  
+  "mark": {"type": "line"},
+
+  "selection": {
+    "Region: ": {
+      "type":"single",
+      "fields": ["Region"],
+      "bind": {
+        "input": "radio",
+        "options": [
+          "North",
+          "South",
+          "Combined"
+        ],
+        "name": "Region: "
+      }
+    },
+    "Measure: ": {
+      "type": "single",
+      "fields": ["Measure"],
+      "bind": {
+        "input": "radio",
+        "options": [
+          "Extent",
+          "Area"
+        ],
+        "name": "Measure: "
+      }
+    }
+    
+},
+  "transform": [
+{"filter": {
+        "selection": "Region: "}},
+{"filter": {
+        "selection": "Measure: "}},
+{"filter": {
+        "field": "Value", "gt":0}}
+
+  
+        ],
+  "encoding": {
+    "x": {"field": "UTC Time", "type": "temporal", "title": "Time"},
+    "y": {
+      "field": "Value",
+      "type": "quantitative",
+      "scale": {"domain": [0, 30]}
+    },
+      "tooltip": [
+            {"field": "Data Type"},
+            {"field": "Region"},
+            {"field": "UTC Time"},
+            {"field": "Value"}],
+            
+    "color":{
+      "field": "Region",
+      "type": "nominal",
+      "legend":{"aria":true},
+      "scale": {"scheme": "purples"}
+    }
+    }
+  }
+
