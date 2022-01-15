@@ -1,0 +1,70 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "width": 800,
+    "height": 500,
+    "background":null,
+    "title": {
+        "text": "Average temperature anomaly, Global",
+        "subtitle":"Global average land-sea temperature anomaly relative to the 1961-1990 average temperature.",
+        "subtitleFontStyle":"italic",
+        "subtitleFontSize":10,
+        "anchor": "start",
+        "color": "black"
+      },
+      "data": {"url": "https://raw.githubusercontent.com/AidanTrue/AidanTrue.github.io/main/temperature-anomaly.csv"},
+      "encoding": {"x": {"field": "Year", "type": "temporal"}},
+          "transform": [{"calculate": "year(datum.Year)", "as": "year"
+            
+            
+          },
+            {"filter": "datum.year>=Min"},
+        {"filter": "datum.year<=Max"}],
+              "params": [{ "name": "Min", "value": 1850,
+          "bind": {"input": "range", "min": 1850, "max": 2019, "step": 1,"name": "Min Year: "}},
+        { "name": "Max", "value": 2019,
+          "bind": {"input": "range", "min": 1850, "max": 2019, "step": 1,"name": "Max Year: "} }
+          ],
+      "layer": [
+        {
+          "mark": "line",
+          "encoding": {
+          "strokeWidth":{"value":1.25},
+            "y": {"field": "Value", "type": "quantitative"},
+                  "tooltip": [
+                {"field": "Value"}],
+            "color": {"field": "Measure", "type": "nominal","scale":{"scheme":"purples"}}
+          }
+        },
+        {
+          "params": [
+            {
+              "name": "index",
+              "select": {
+                "type": "point",
+                "encodings": ["x"],
+                "on": "mousemove",
+                "nearest": true
+              }
+            }
+          ],
+          "mark": {"type": "point"},
+          "encoding": {
+            "y": {"field": "Value", "type": "quantitative"},
+            "opacity": {"value": 0}
+          }
+        },
+        {
+          "transform": [{"filter": {"and": ["index.Year", {"param": "index"}]}}],
+          "mark": "rule"
+        },
+        {
+          "transform": [{"filter": {"and": ["index.Year", {"param": "index"}]}}],
+          "mark": "text",
+          "encoding": {
+            "y": {"value": 10},
+            "text": {"field": "Year", "timeUnit":"year"}
+          }
+        }
+      ],
+      "config": {"text": {"align": "right", "dx": -5, "dy": 5}}
+    }
