@@ -1,0 +1,78 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "width": 1200,
+    "height": 500,
+    "background":null,
+    "title": {
+        "text": "Historical Average Atmospheric CO2 (PPMV)",
+        "fontSize":17,
+        "subtitle":["Data collected from Antarctic Ice Cores","Source: NOAA"],
+        "subtitleFontStyle":"italic",
+        "subtitleFontSize":12,
+        "anchor": "start",
+        "color": "black"
+      },
+      "data": {"url": "https://raw.githubusercontent.com/AidanTrue/AidanTrue.github.io/main/IceCoreCO2.csv"},
+      "encoding": {"x": {"field": "year", "type": "quantitative"}},
+      "layer": [
+        {
+          "mark": "line",
+          "encoding": {
+          "strokeWidth":{"value":1.25},
+            "y": {
+              "field": "ppmv", 
+              "type": "quantitative",
+              "title":"Atmospheric CO2 (ppmv)"},
+              "tooltip": [
+              {"field": "ppmv"}],
+            "x":{
+              "field":"year",
+              "scale":{"domain":[-803719,2001]},
+              "title":"Year"
+            }
+          }
+        },
+        {
+          "params": [
+            {
+              "name": "index",
+              "select": {
+                "type": "point",
+                "encodings": ["x"],
+                "on": "mousemove",
+                "nearest": true
+              }
+            }
+          ],
+          "mark": {"type": "point"},
+          "encoding": {
+            "y": {"field": "ppmv", "type": "quantitative"},
+            "opacity": {"value": 0},
+            "x": {
+              "field":"year",
+              "scale":{"domain":[-803719,2001]}
+          }
+        }},
+        {
+          "transform": [{"filter": {"and": ["index.year", {"param": "index"}]}}],
+          "mark": "rule",
+          "encoding": {"x":{
+              "field":"year",
+              "scale":{"domain":[-803719,2001]}
+          }}
+        },
+        {
+          "transform": [{"filter": {"and": ["index.year", {"param": "index"}]}}],
+          "mark": "text",
+          "encoding": {
+            "y": {"value": 10},
+            "text": {"field": "year"},
+            "x":{
+              "field":"year",
+              "scale":{"domain":[-803719,2001]}
+          }
+          }
+        }
+      ],
+      "config": {"text": {"align": "right", "dx": -5, "dy": 5}}
+    }
