@@ -90,27 +90,6 @@
           "text": {"type": "nominal", "field": "R2"}
         }
       }
-  ,
-      {
-        "transform": [
-          {
-            "regression": "POP_MLNPER",
-            "on": "Renewable Energy (%)",
-            "params": true
-          },
-          {"calculate": "'R²: '+format(datum.rSquared, '.2f')", "as": "R2"}
-        ],
-        "mark": {
-          "type": "text",
-          "color": "darkviolet",
-          "x": "width",
-          "align": "right",
-          "y": -5
-        },
-        "encoding": {
-          "text": {"type": "nominal", "field": "R2"}
-        }
-      }
     ]
   }
   

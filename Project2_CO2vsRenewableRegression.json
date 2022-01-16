@@ -1,0 +1,139 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  
+  "title": {
+        "text": ["Correlation of CO2 Emissions Per Capita against Renewable Energy as a Percentage","of Total electricity output from renewables in 2020"],
+        "fontSize":17,
+        "subtitle": "Source: Global Carbon Project",
+        "subtitleFontSize":12,
+        "anchor": "start",
+        "color": "black"
+      },
+  
+    "width":600,
+    "height":400,
+    "background":null,
+  
+    "data": {
+      "url": "https://raw.githubusercontent.com/AidanTrue/AidanTrue.github.io/main/CO2vsRenewable.csv"
+    },
+
+    "layer": [{
+      "transform": [
+        {
+          "filter": {
+            "field": "Continent",
+            "oneOf": ["Europe","Asia","South America","North America","Africa","Australia"]
+          }
+        }
+      ],
+        "mark": {
+          "type": "point",
+          "filled": true,
+          "size":40
+        },
+  
+  
+        "encoding": {
+          
+          "x": {
+            "field": "Renewables",
+            "type": "quantitative",
+            "title":"Renewable Energy as a Percentage of Total Primary Energy Supply"
+          },
+          "y": {
+            "field": "CO2",
+            "type": "quantitative",
+            "title": "Annual CO2 emissions (Tonnes per year, per capita)"
+          },
+         "color": {"field": "Continent", "type": "nominal",
+         "legend":{"aria":true},"scale": {"scheme": "category10"}},
+           "tooltip": [
+            {"field": "Country"},
+            {"field": "CO2"},
+            {"field": "Renewables"}]
+      }},
+      {
+      "transform": [
+        {
+          "filter": {
+            "field": "Continent",
+            "oneOf": ["Global Average"]
+          }
+        }
+      ],
+        "mark": {
+          "type": "point",
+          "filled": false,
+          "size":80
+        },
+  
+  
+        "encoding": {
+          
+          "x": {
+            "field": "Renewables",
+            "type": "quantitative"
+          },
+          "y": {
+            "field": "CO2",
+            "type": "quantitative"
+          },
+         "color": {"field": "Continent", "type": "nominal",
+         "legend":{"aria":true},"scale": {"scheme": "category10"}},
+           "tooltip": [
+            {"field": "Country"},
+            {"field": "CO2"},
+            {"field": "Renewables"}]
+      }},
+        {
+        "mark": {
+          "type": "line",
+          "color": "darkviolet"
+        },
+  "transform": [
+          {
+            "regression": "CO2",
+            "on": "Renewables"
+          }
+        ],
+        "encoding": {
+          "x": {
+            "field": "Renewables",
+            "type": "quantitative",
+            "axis": {"format":".1f"}
+          },
+          "y": {
+            "field": "CO2",
+            "type": "quantitative"
+          }
+        }
+      },
+      {
+        "transform": [
+        {
+          "filter": {
+            "field": "Continent",
+            "oneOf": ["Europe","Asia","South America","North America","Africa","Australia"]
+          }
+        },{
+            "regression": "CO2",
+            "on": "Renewables",
+            "params": true
+          },
+          {"calculate": "'R²: '+format(datum.rSquared, '.2f')", "as": "R2"}
+        ],
+        "mark": {
+          "type": "text",
+          "color": "darkviolet",
+          "x": "width",
+          "align": "right",
+          "y": -20
+        },
+        "encoding": {
+          "text": {"type": "nominal", "field": "R2"}
+        }
+      }
+    ]
+  }
+  
