@@ -1,70 +1,70 @@
-Country,Code,CO2,Renewables,Continent
-Argentina,ARG,3.4733,24.79572168,South America
-Australia,AUS,15.3684,24.86735292,Australia
-Austria,AUT,6.7324,79.26764044,Europe
-Azerbaijan,AZE,3.7203,7.307339641,Asia
-Bangladesh,BGD,0.5637,1.397396679,Asia
-Belarus,BLR,6.0793,2.892738378,Europe
-Belgium,BEL,7.2262,26.1191673,Europe
-Bolivia,BOL,1.7733,37.14999322,South America
-Bosnia and Herzegovina,BIH,6.5282,32.29012111,Europe
-Brazil,BRA,2.1988,84.23127338,South America
-Bulgaria,BGR,5.3888,18.59108165,Europe
-Canada,CAN,14.1969,68.51970362,North America
-Chile,CHL,4.2462,48.65207898,South America
-China,CHN,7.4117,29.02187686,Asia
-Colombia,COL,1.7512,68.57975864,South America
-Costa Rica,CRI,1.5523,99.84143322,North America
-Croatia,HRV,4.1366,64.07052395,Europe
-Cyprus,CYP,5.3805,11.18648196,Europe
-Czechia,CZE,8.215,12.09008481,Europe
-Denmark,DNK,4.5224,78.20888131,Europe
-Estonia,EST,7.8795,35.21072186,Europe
-Finland,FIN,7.0907,49.93630134,Europe
-France,FRA,4.2381,23.32464882,Europe
-Germany,DEU,7.6901,44.89687996,Europe
-Greece,GRC,5.0115,35.90825259,Europe
-Hungary,HUN,4.9973,14.65189351,Europe
-India,IND,1.7694,22.22421772,Asia
-Iran,IRN,8.8702,6.731863236,Asia
-Ireland,IRL,6.7538,40.73968244,Europe
-Italy,ITA,5.0249,43.16692884,Europe
-Japan,JPN,8.1499,26.29050944,Asia
-Kazakhstan,KAZ,15.5158,11.02814355,Asia
-Latvia,LVA,3.5907,61.11292505,Europe
-Lithuania,LTU,5.0691,57.53801145,Europe
-Luxembourg,LUX,13.059,71.52851872,Europe
-Malta,MLT,3.6121,10.12124434,Europe
-Mexico,MEX,2.7686,21.03479228,South America
-Mongolia,MNG,26.978,7.696443694,Asia
-Netherlands,NLD,8.0596,25.21376743,Europe
-New Zealand,NZL,6.9418,81.12390946,Australia
-Nigeria,NGA,0.6086,18.96806314,Africa
-Norway,NOR,7.615,98.78692822,Europe
-Pakistan,PAK,1.0628,37.25813602,Asia
-Peru,PER,1.3559,64.72563239,South America
-Philippines,PHL,1.2413,21.85763372,Asia
-Poland,POL,7.916,16.91160163,Europe
-Portugal,PRT,3.9609,58.82566474,Europe
-Romania,ROU,3.7154,43.87476099,Europe
-Russia,RUS,10.8072,21.09503672,Europe
-Serbia,SRB,4.9369,30.00816254,Europe
-Singapore,SGP,7.778,3.306309887,Asia
-Slovakia,SVK,5.6286,25.9842846,Europe
-Slovenia,SVN,6.043,33.29207083,Europe
-South Africa,ZAF,7.6204,6.24835733,Africa
-South Korea,KOR,11.6562,5.660083834,Asia
-Spain,ESP,4.4683,43.46242557,Europe
-Sweden,SWE,3.8255,67.62177305,Europe
-Switzerland,CHE,3.7319,65.13183134,Europe
-Taiwan,TWN,11.4698,5.754325574,Asia
-Tajikistan,TJK,0.9906,92.88361384,Asia
-Thailand,THA,3.6929,17.99676678,Asia
-Tunisia,TUN,2.3799,3.801764291,Africa
-Turkey,TUR,4.6573,43.11183898,Europe
-Ukraine,UKR,4.8912,9.981577006,Europe
-United Kingdom,GBR,4.8549,42.29558959,Europe
-United States,USA,14.2379,20.44369768,North America
-Uruguay,URY,1.6812,94.06027399,South America
-Vietnam,VNM,2.6126,30.98625305,Asia
-Global Average,OWID_WRL,4.4654,28.98463451,Global Average
+Country,Code,CO2,Renewables,Continent,G20
+Argentina,ARG,3.4733,24.79572168,South America,T
+Australia,AUS,15.3684,24.86735292,Australia,T
+Austria,AUT,6.7324,79.26764044,Europe,T
+Azerbaijan,AZE,3.7203,7.307339641,Asia,F
+Bangladesh,BGD,0.5637,1.397396679,Asia,F
+Belarus,BLR,6.0793,2.892738378,Europe,F
+Belgium,BEL,7.2262,26.1191673,Europe,T
+Bolivia,BOL,1.7733,37.14999322,South America,F
+Bosnia and Herzegovina,BIH,6.5282,32.29012111,Europe,F
+Brazil,BRA,2.1988,84.23127338,South America,T
+Bulgaria,BGR,5.3888,18.59108165,Europe,T
+Canada,CAN,14.1969,68.51970362,North America,T
+Chile,CHL,4.2462,48.65207898,South America,F
+China,CHN,7.4117,29.02187686,Asia,T
+Colombia,COL,1.7512,68.57975864,South America,F
+Costa Rica,CRI,1.5523,99.84143322,North America,F
+Croatia,HRV,4.1366,64.07052395,Europe,T
+Cyprus,CYP,5.3805,11.18648196,Europe,T
+Czechia,CZE,8.215,12.09008481,Europe,T
+Denmark,DNK,4.5224,78.20888131,Europe,T
+Estonia,EST,7.8795,35.21072186,Europe,T
+Finland,FIN,7.0907,49.93630134,Europe,T
+France,FRA,4.2381,23.32464882,Europe,T
+Germany,DEU,7.6901,44.89687996,Europe,T
+Greece,GRC,5.0115,35.90825259,Europe,T
+Hungary,HUN,4.9973,14.65189351,Europe,T
+India,IND,1.7694,22.22421772,Asia,T
+Iran,IRN,8.8702,6.731863236,Asia,F
+Ireland,IRL,6.7538,40.73968244,Europe,F
+Italy,ITA,5.0249,43.16692884,Europe,T
+Japan,JPN,8.1499,26.29050944,Asia,T
+Kazakhstan,KAZ,15.5158,11.02814355,Asia,F
+Latvia,LVA,3.5907,61.11292505,Europe,T
+Lithuania,LTU,5.0691,57.53801145,Europe,T
+Luxembourg,LUX,13.059,71.52851872,Europe,T
+Malta,MLT,3.6121,10.12124434,Europe,T
+Mexico,MEX,2.7686,21.03479228,South America,T
+Mongolia,MNG,26.978,7.696443694,Asia,F
+Netherlands,NLD,8.0596,25.21376743,Europe,T
+New Zealand,NZL,6.9418,81.12390946,Australia,F
+Nigeria,NGA,0.6086,18.96806314,Africa,F
+Norway,NOR,7.615,98.78692822,Europe,F
+Pakistan,PAK,1.0628,37.25813602,Asia,F
+Peru,PER,1.3559,64.72563239,South America,F
+Philippines,PHL,1.2413,21.85763372,Asia,F
+Poland,POL,7.916,16.91160163,Europe,T
+Portugal,PRT,3.9609,58.82566474,Europe,T
+Romania,ROU,3.7154,43.87476099,Europe,T
+Russia,RUS,10.8072,21.09503672,Europe,T
+Serbia,SRB,4.9369,30.00816254,Europe,F
+Singapore,SGP,7.778,3.306309887,Asia,F
+Slovakia,SVK,5.6286,25.9842846,Europe,T
+Slovenia,SVN,6.043,33.29207083,Europe,T
+South Africa,ZAF,7.6204,6.24835733,Africa,T
+South Korea,KOR,11.6562,5.660083834,Asia,F
+Spain,ESP,4.4683,43.46242557,Europe,T
+Sweden,SWE,3.8255,67.62177305,Europe,T
+Switzerland,CHE,3.7319,65.13183134,Europe,F
+Taiwan,TWN,11.4698,5.754325574,Asia,F
+Tajikistan,TJK,0.9906,92.88361384,Asia,F
+Thailand,THA,3.6929,17.99676678,Asia,F
+Tunisia,TUN,2.3799,3.801764291,Africa,F
+Turkey,TUR,4.6573,43.11183898,Europe,T
+Ukraine,UKR,4.8912,9.981577006,Europe,F
+United Kingdom,GBR,4.8549,42.29558959,Europe,T
+United States,USA,14.2379,20.44369768,North America,T
+Uruguay,URY,1.6812,94.06027399,South America,F
+Vietnam,VNM,2.6126,30.98625305,Asia,F
+Global Average,OWID_WRL,4.4654,28.98463451,Global Average,F
