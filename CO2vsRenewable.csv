@@ -1,4 +1,4 @@
-Country,Code,Annual CO2 emissions (per capita),Renewables (% electricity),Continent
+Country,Code,CO2,Renewables%,Continent
 Argentina,ARG,3.4733,24.79572168,South America
 Australia,AUS,15.3684,24.86735292,Australia
 Austria,AUT,6.7324,79.26764044,Europe
