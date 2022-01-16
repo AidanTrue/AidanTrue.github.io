@@ -2,9 +2,10 @@
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "title": {
       "text": "UK Greenhouse Gas Emissions",
+      "fontSize":17,
       "subtitle": "Edited to Include Linear Decrease From 2021-2035 Required to Meet 6th Carbon Budget Goals. Source: ONS, gov.uk",
       "subtitleFontStyle": "italic",
-      "subtitleFontSize": 10,
+      "subtitleFontSize": 12,
       "anchor": "start"
     },
     "data": {

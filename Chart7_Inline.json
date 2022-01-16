@@ -11,9 +11,10 @@
     
 "title": {
     "text":"Popularity for More Investment in the Green Economy and Jobs among G20 Countries (%)",
-    "subtitle":"Data Among G20 Countries (%). Source: UNDP and University of Oxford.",
+    "fontSize":17,
+    "subtitle":"Source: UNDP and University of Oxford.",
     "subtitleFontStyle":"italic",
-    "subtitleFontSize":10,
+    "subtitleFontSize":12,
     "anchor": "start",
     "color": "black"
 },

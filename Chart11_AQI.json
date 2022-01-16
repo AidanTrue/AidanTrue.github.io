@@ -2,9 +2,10 @@
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "title": {
       "text": "G20 Countries' Air Quility Index (AQI) Average in 2020",
+      "fontSize":17,
       "subtitle": "Source: IQAir",
       "subtitleFontStyle": "italic",
-      "subtitleFontSize": 10,
+      "subtitleFontSize": 12,
       "anchor": "start"
     },
     "data": {

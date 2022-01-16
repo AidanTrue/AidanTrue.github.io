@@ -8,9 +8,10 @@
 
 "title": {
     "text":"Increase in Unpaid Care and Domestic Workloads, By Gender",
+    "fontSize":17,
     "subtitle":"Source: UN Women",
     "subtitleFontStyle":"italic",
-    "subtitleFontSize":10,
+    "subtitleFontSize":12,
     "anchor": "start",
     "color": "black"
 },

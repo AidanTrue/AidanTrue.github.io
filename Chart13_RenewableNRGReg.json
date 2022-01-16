@@ -3,8 +3,9 @@
   
   "title": {
         "text": ["Correlation of Population against Renewable Energy as a Percentage","of Total Primary Energy Supply in 2018"],
+        "fontSize":17,
         "subtitle": "Source: OECD (2022), Renewable Energy (indicator). OECD (2022), Population (indicator)",
-        "subtitleFontSize":10,
+        "subtitleFontSize":12,
         "anchor": "start",
         "color": "black"
       },

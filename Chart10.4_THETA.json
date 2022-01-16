@@ -1,6 +1,7 @@
 {"$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "title": {
       "text": "THETA/USD",
+      "fontSize":17,
       "anchor": "start"
     },
     "data": {
@@ -22,12 +23,13 @@
       "x": {
         "field": "time_period_end",
         "type": "temporal",
-        "title": null,
+        "title": "Date",
         "axis": {"grid": false}
         
       },
       "y": {
         "field": "price_close",
+        "title": "Price (USD)",
         "type": "quantitative"
       }
     }

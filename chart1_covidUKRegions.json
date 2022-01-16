@@ -9,8 +9,9 @@
 
   "title": {
     "text": "Covid cases: UK regions",
+    "fontSize":17,
     "subtitleFontStyle":"italic",
-    "subtitleFontSize":10,
+    "subtitleFontSize":12,
     "anchor": "start",
     "color": "black"
   },

@@ -3,9 +3,10 @@
      
        "title": {
         "text": "Declining populations",
+        "fontSize":17,
         "subtitle":"Cumulative % change in population. Source: UN.",
         "subtitleFontStyle":"italic",
-        "subtitleFontSize":10,
+        "subtitleFontSize":12,
         "anchor": "start",
         "color": "black"},
     

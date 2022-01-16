@@ -7,8 +7,9 @@
  
    "title": {
      "text": "Bitcoin price in USD",
+     "fontSize":17,
      "subtitleFontStyle":"italic",
-     "subtitleFontSize":10,
+     "subtitleFontSize":12,
      "anchor": "start",
      "color": "black"
    },
@@ -29,11 +30,11 @@
  
  
    "encoding": {
-     "x": {"field": "time_period_start", "type": "temporal", "title": null},
+     "x": {"field": "time_period_start", "type": "temporal", "title": "Date"},
      "y": {
        "field": "price_close",
        "type": "quantitative",
-       "title": null
+       "title": "Price (USD)"
      }
        
      

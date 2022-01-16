@@ -7,10 +7,11 @@
     "format": {"type": "csv", "parse":{"UTC Time":"utc:'%d %m %Y'"}}},
 
   "title": {
-    "text": "Title",
-    "subtitle":"Subtitle",
+    "text": "Sea Ice Extent for North & South Poles",
+    "fontSize":17,
+    "subtitle":["Source: Fetterer, F., K. Knowles, W. N. Meier, M. Savoie, and A. K. Windnagel. 2017. Sea Ice Index, Version 3. Boulder, Colorado USA.","NSIDC: National Snow and Ice Data Center."],
     "subtitleFontStyle":"italic",
-    "subtitleFontSize":10,
+    "subtitleFontSize":12,
     "anchor": "start",
     "color": "black"
   },
@@ -64,16 +65,17 @@
   
         ],
   "encoding": {
-    "x": {"field": "UTC Time", "type": "temporal", "title": "Time"},
+    "x": {"field": "UTC Time", "type": "temporal", "title": "Date"},
     "y": {
       "field": "Value",
       "type": "quantitative",
-      "scale": {"domain": [0, 30]}
+      "scale": {"domain": [0, 30]},
+      "title": "Millions of square kilometers"
     },
       "tooltip": [
-            {"field": "Data Type"},
+            {"field": "Measure"},
             {"field": "Region"},
-            {"field": "UTC Time"},
+            {"field": "UTC Time","timeUnit":"yearmonth"},
             {"field": "Value"}],
             
     "color":{

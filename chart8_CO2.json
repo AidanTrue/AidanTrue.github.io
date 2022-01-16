@@ -8,9 +8,11 @@
   },
 
   "title": {
-    "text": "CO2",
+    "text": "Weekly Mean Carbon Dioxide Measured At Mauna Loa Observatory, Hawaii",
+    "fontSize":17,
+    "subtitle":"Source: NOAA & PlanetOS",
     "subtitleFontStyle":"italic",
-    "subtitleFontSize":10,
+    "subtitleFontSize":12,
     "anchor": "start",
     "color": "black"
   },
@@ -38,11 +40,11 @@
 
 
   "encoding": {
-    "x": {"field": "axis:time", "type": "temporal", "title": null},
+    "x": {"field": "axis:time", "type": "temporal", "title": "Date"},
     "y": {
       "field": "data:CO2",
       "type": "quantitative",
-      "title": null
+      "title": "CO² PPM (Particles Per Million)"
     }
     
   }
