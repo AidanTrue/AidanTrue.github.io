@@ -15,7 +15,7 @@
         "transform": [
             {"filter": "datum.Year==year"}],
               "params": [{ "name": "year", "value": 2000,
-          "bind": {"input": "range", "min": 2000, "max": 2019, "step": 1,"name": "Year: "}}],
+          "bind": {"input": "range", "min": 2000, "max": 2020, "step": 1,"name": "Year: "}}],
 
 "repeat": {"layer": ["FossilFuels", "Nuclear","Renewables"]},
    
