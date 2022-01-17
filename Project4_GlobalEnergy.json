@@ -1,0 +1,68 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "data": {"url": "https://raw.githubusercontent.com/AidanTrue/AidanTrue.github.io/main/global-energy-substitution.csv"},
+
+  
+
+"title": {
+    "text":"Global Electricity Consumption by Source",
+    "fontSize":17,
+    "subtitle":"Sources: Vaclav Smil (2017). Energy Transitions: Global and National Perspectives. & BP Statistical Review of World Energy.",
+    "subtitleFontStyle":"italic",
+    "subtitleFontSize":12,
+    "anchor": "start",
+    "color": "black"
+},
+          "transform": [{"calculate": "year(datum.Year)", "as": "year"},{"calculate": "abs(datum.Wind) + abs(datum.Oil) + abs(datum.Nuclear) + abs(datum.Hydropower) + abs(datum.TraditionalBiomass) + abs(datum.OtherRenewables) + abs(datum.Coal)+ abs(datum.Gas) + abs(datum.Solar) + abs(datum.Biofuels)","as": "Total Consumption (TWh)"},
+          {"calculate": "datum.OtherRenewables", "as": "Other Renewables"},
+          {"calculate": "datum.TraditionalBiomass", "as": "Traditional Biomass"},
+            {"filter": "datum.year>=Min"},
+        {"filter": "datum.year<=Max"}],
+              "params": [{ "name": "Min", "value": 1800,
+          "bind": {"input": "range", "min": 1800, "max": 2019, "step": 1,"name": "Min Year: "}},
+        { "name": "Max", "value": 2019,
+          "bind": {"input": "range", "min": 1800, "max": 2019, "step": 1,"name": "Max Year: "} }
+          ],
+
+"repeat": {"layer": ["Wind","Oil","Nuclear","Hydropower","Traditional Biomass","Other Renewables","Coal","Gas","Solar","Biofuels"]},
+   
+    "background":null,
+     "spec": {
+        
+        "height": 400,
+        "width": 800,
+        "background":null,
+        
+"encoding": {
+    "x": {
+        "field": "Year",
+        "type": "temporal",
+        "title":"Year",
+        "timeUnit":"year"}}, 
+ "layer": [{
+        "mark": {
+            "type":"line","strokeWidth":3},
+        "encoding": {
+
+    
+            "y": {
+                "field": {"repeat": "layer"},
+                "scale":{"domain": [0, 60000]},
+                "type": "quantitative",
+                "title": "Global Energy Consumption (TWh)"},
+            "tooltip":[
+            {"field": "Total Consumption (TWh)"},
+            {"field": {"repeat": "layer"}},
+            {"field": "Year", "timeUnit":"year"}],
+    
+            "color": {
+                "title":"Energy Type",
+                "datum": {"repeat": "layer"},
+                "scale":{"scheme":["#fff100", "#ff8c00", "#e81123", "#ec008c", "#68217a", "#00188f", "#00bcf2", "#00b294", "#009e49", "#bad80a"]}
+            }
+          } 
+      }
+    
+  ]
+
+}}
