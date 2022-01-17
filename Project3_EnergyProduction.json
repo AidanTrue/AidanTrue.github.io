@@ -13,7 +13,6 @@
     "color": "black"
 },
         "transform": [
-            {"calculate": "datum.Renewables+datum.Nuclear+datum.FossilFuels", "as": "Total"},
             {"filter": "datum.Year==year"}],
               "params": [{ "name": "year", "value": 2000,
           "bind": {"input": "range", "min": 2000, "max": 2019, "step": 1,"name": "Year: "}}],
