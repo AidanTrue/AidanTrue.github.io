@@ -1,6 +1,6 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "data": {"url": "https://raw.githubusercontent.com/AidanTrue/AidanTrue.github.io/main/global-energy-substitution.csv"},
+    "data": {"url": "https://raw.githubusercontent.com/AidanTrue/AidanTrue.github.io/main/Project/global-energy-substitution.csv"},
 
   
 

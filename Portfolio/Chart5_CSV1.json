@@ -9,7 +9,7 @@
     "anchor": "start"
   },
   "data": {
-    "url": "https://raw.githubusercontent.com/AidanTrue/AidanTrue.github.io/main/ltla_2021-10-13.csv",
+    "url": "https://raw.githubusercontent.com/AidanTrue/AidanTrue.github.io/main/Portfolio/ltla_2021-10-13.csv",
     "format": {"type": "csv"}
   },
   "transform": [

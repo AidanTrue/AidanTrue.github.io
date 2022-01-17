@@ -12,7 +12,7 @@
         "anchor": "start",
         "color": "black"
       },
-      "data": {"url": "https://raw.githubusercontent.com/AidanTrue/AidanTrue.github.io/main/temperature-anomaly.csv"},
+      "data": {"url": "https://raw.githubusercontent.com/AidanTrue/AidanTrue.github.io/main/Portfolio/temperature-anomaly.csv"},
       "encoding": {"x": {"field": "Year", "type": "temporal"}},
           "transform": [{"calculate": "year(datum.Year)", "as": "year"
             

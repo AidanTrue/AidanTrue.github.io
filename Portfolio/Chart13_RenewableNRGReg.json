@@ -15,7 +15,7 @@
     "background":null,
   
     "data": {
-      "url": "https://raw.githubusercontent.com/AidanTrue/AidanTrue.github.io/main/PopulationVSRenewableNRG.csv"
+      "url": "https://raw.githubusercontent.com/AidanTrue/AidanTrue.github.io/main/Portfolio/PopulationVSRenewableNRG.csv"
     },
     
   "transform": [{"calculate": "100*datum.RENEWABLEPC_PRYENRGSUPPLY", "as": "Renewable Energy (%)"},

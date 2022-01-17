@@ -3,7 +3,7 @@
   "description": "Coronavirus cases",
   
   "data": {
-    "url": "https://raw.githubusercontent.com/AidanTrue/AidanTrue.github.io/main/Sea%20Ice%20Extent%20(N%26S).csv",
+    "url": "https://raw.githubusercontent.com/AidanTrue/AidanTrue.github.io/main/Portfolio/Sea%20Ice%20Extent%20(N%26S).csv",
     "format": {"type": "csv", "parse":{"UTC Time":"utc:'%d %m %Y'"}}},
 
   "title": {

@@ -12,7 +12,7 @@
         "anchor": "start",
         "color": "black"
       },
-      "data": {"url": "https://raw.githubusercontent.com/AidanTrue/AidanTrue.github.io/main/IceCoreCO2.csv"},
+      "data": {"url": "https://raw.githubusercontent.com/AidanTrue/AidanTrue.github.io/main/Project/IceCoreCO2.csv"},
       "encoding": {"x": {"field": "year", "type": "quantitative"}},
       "layer": [
         {
