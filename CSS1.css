@@ -11,7 +11,15 @@ multi line comment */
 p {
     font-family: "Cabin";
 	font-size: 18px;
-	margin: 10px 10px;
+	margin: 0px 0px 10px;
+	line-height: 22.4px;
+	color: #ffffff;
+}
+
+p2 {
+    font-family: "Cabin";
+	font-size: 18px;
+	margin: 0px 0px 10px;
 	line-height: 22.4px;
 	color: #ffffff;
 }
