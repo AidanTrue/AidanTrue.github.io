@@ -1,0 +1,48 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "data": {"url": "https://raw.githubusercontent.com/AidanTrue/AidanTrue.github.io/main/ElectricityMix.csv"},
+  
+
+"title": {
+    "text":"Electricity Consumption from Fossil Fuels, Nuclear and Renewables",
+    "fontSize":17,
+    "subtitle":"Sources: BP Statistical Review of World Energy & Ember",
+    "subtitleFontStyle":"italic",
+    "subtitleFontSize":12,
+    "anchor": "start",
+    "color": "black"
+},
+        "transform": [
+            {"calculate": "datum.Renewables+datum.Nuclear+datum.FossilFuels", "as": "Total"},
+            {"filter": "datum.Year==year"}],
+              "params": [{ "name": "year", "value": 2000,
+          "bind": {"input": "range", "min": 2000, "max": 2019, "step": 1,"name": "Year: "}}],
+
+"repeat": {"layer": ["FossilFuels", "Nuclear","Renewables"]},
+   
+    "background":null,
+     "spec": {
+        
+        "height": 400,
+        "width": 600,
+ "layer": [{
+        "mark": {
+            "type":"bar"},    
+  
+        "encoding": {
+            "x": {
+                "field": "Country",
+                "type": "nominal"}, 
+    
+            "y": {
+                "field": {"repeat": "layer"},
+                "type": "quantitative",
+                "title": "Energy Consumption From Fossil Fuels, Nuclear Power and Renewables (TWh)"},
+    
+            "color": {
+                "datum": {"repeat": "layer"},
+                "scale": {"range": ["#E95C20FF","#4F2C1Dff", "#006747FF"]}}
+          } 
+      }]
+  }
+}
