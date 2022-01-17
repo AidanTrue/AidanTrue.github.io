@@ -11,7 +11,7 @@ multi line comment */
 p {
     font-family: "Cabin";
 	font-size: 18px;
-	margin: 0px 0px 10px;
+	margin: 10px 10px;
 	line-height: 22.4px;
 	color: #ffffff;
 }
@@ -71,9 +71,4 @@ h6 {
 	margin: 30px;
 	line-height: 22.4px;
 	color: #ffffff;
-}
-
-gap{
-	margin: 3000px;
-	color: rgb(236, 252, 255)
 }

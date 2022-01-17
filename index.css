@@ -124,6 +124,14 @@ hr{  border: 2px solid #00173D;
 
 }
 
+textbox{
+    vertical-align: middle;
+    width: 80%;
+    height: auto;
+    display: inline-block;}
+
+
+
 .fancy{
     text-align: center;
     vertical-align: middle;
