@@ -16,6 +16,11 @@ p {
 	color: #ffffff;
 }
 
+a {
+    font-family: "Cabin";
+	font-size: 18px;
+}
+
 
 /* Format my text */
 text {
