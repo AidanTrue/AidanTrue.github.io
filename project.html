@@ -50,7 +50,7 @@
     
     <div class="parent">
         <textbox>
-    <a>This project will focus on Carbon Dioxide (CO2) as the key greenhouse gas to analyse, as the </a><a href=chrome-extension://mhjfbmdgcfjbbpaeojofohoefgiehjai/index.html>Intergovernmental Panel on Climate Change</a><a> estimates that Carbon Dioxide accounts for roughly 65% of greenhouse gas emissions. Fossil fuel use is the primary source of CO2, but CO2 can also be emitted from direct human-induced impacts, such as through deforestation, land clearing for agriculture, and degradation of soils. Due to the primary source of CO2 being fossil fuels, and the primary use of fossil fuels being energy production, this project will also look at renewable energy production & investment.</a>
+    <a>This project will focus on Carbon Dioxide (CO2) as the key greenhouse gas to analyse, as the </a><a href=chrome-extension://mhjfbmdgcfjbbpaeojofohoefgiehjai/index.html target="_blank">Intergovernmental Panel on Climate Change</a><a> estimates that Carbon Dioxide accounts for roughly 65% of greenhouse gas emissions. Fossil fuel use is the primary source of CO2, but CO2 can also be emitted from direct human-induced impacts, such as through deforestation, land clearing for agriculture, and degradation of soils. Due to the primary source of CO2 being fossil fuels, and the primary use of fossil fuels being energy production, this project will also look at renewable energy production & investment.</a>
 </textbox>
 </div>
    
@@ -58,14 +58,14 @@
     <div class="parent">
         <textbox>
     <h5>“The vast preponderance of evidence, based on years of research conducted by a wide array of different investigators at many institutions, clearly indicates that global climate change is real, it is caused largely by human activities, and the need to take action is urgent”</h5>
-        <a>~Alan I. Leshner, chief executive officer of </a><a href=https://www.aaas.org/news/aaas-reaffirms-statements-climate-change-and-integrity>The American Association for the Advancement of Science</a>
+        <a>~Alan I. Leshner, chief executive officer of </a><a href=https://www.aaas.org/news/aaas-reaffirms-statements-climate-change-and-integrity target="_blank">The American Association for the Advancement of Science</a>
     </textbox>
     </div>
     <hr>
 
 <div class='parent'>
     <div class='child1'>
-        <p>Introductory Graph</p>
+        <p>Introductory Graphs - Setting the scene</p>
     <div id="chart20">
         <script>
             var myChart20 = "Project1_HistoricalCO2.json";
@@ -73,10 +73,20 @@
         </script>
     </div>
     </div>
+    <div class='child1'>
+        <p></p>
+    <div id="chart15">
+        <script>
+            var myChart15 = "Chart15_InteractiveTemp.json";
+            vegaEmbed ('#chart15', myChart15);
+        </script>
+    </div>
+    </div>
+    </div>
 </div>
 <div class="parent">
     <textbox>
-<p>This first graph highlights why the climate emergency is just that: an emergency. The data shows 800,000 years of atmospheric CO2 history, with peaks during the warm periods (interglacial), and troughs during ice-ages (glacial periods). Prior to recent years, the maximum atmospheric CO2 concentration was around 300ppmv. In 1912, that boundary was broken and, from this data, the most recent measure in 2001 puts the atmospheric CO2 at 368 ppmv, a clear and worrying anomaly when compared to our historical data. In fact, based on preliminary analysis by the </a><a href=https://research.noaa.gov/article/ArtMID/587/ArticleID/2742/Despite-pandemic-shutdowns-carbon-dioxide-and-methane-surged-in-2020>National Oceanic and Atmospheric Administration</a><a>, the global average atmospheric carbon dioxide in 2020 was 412.5 parts per million, the highest ever recorded.</a>
+<p>These first graphs highlight why the climate emergency is just that: an emergency. The first data shows 800,000 years of atmospheric CO2 history, with peaks during the warm periods (interglacial), and troughs during ice-ages (glacial periods). Prior to recent years, the maximum atmospheric CO2 concentration was around 300ppmv. In 1912, that boundary was broken and, from this data, the most recent measure in 2001 puts the atmospheric CO2 at 368 ppmv, a clear and worrying anomaly when compared to our historical data. In fact, based on preliminary analysis by the </a><a href=https://research.noaa.gov/article/ArtMID/587/ArticleID/2742/Despite-pandemic-shutdowns-carbon-dioxide-and-methane-surged-in-2020>National Oceanic and Atmospheric Administration</a><a>, the global average atmospheric carbon dioxide in 2020 was 412.5 parts per million, the highest ever recorded. The second graph shows the temperature anomaly from 1850-2019, relative to the 1961-1990 average temperature. As the graph shows, average temperatures are rising which begs the question: What can we do about it, and who's examples should we follow?</a>
 </textbox>
 </div>
 
@@ -99,7 +109,7 @@
 
 <div class='parent'>
     <div class='child1'>
-        <p>Energy Prodcution Breakdown</p>
+        <p>Energy Production Breakdown</p>
     <div id="chart22">
         <script>
             var myChart22 = "Project3_EnergyProduction.json";
@@ -111,7 +121,7 @@
 
 <div class="parent">
     <textbox>
-<p>This interactive bar chart shows us the breakdown of energy production for 15 G20 countries between 2000-2020, splitting up total usage between fossil fuels, nuclear and renewables. This graph starts to paint a picture as to why some countries have a much higher share of their total energy usage coming from renewables. Looking at this graph, one may be inclined to view the USA and China as the 'bad guys' in terms of energy usage, and whilst they do use a much higher absolute value of fossil fuels, they also use a much higher absolute value of energy in general - unsurprisingly the two global superpowers have a huge energy demand compared to the other countries in our dataset. Whilst it is still true that the % of total energy supply that renewables make up is comparatively small for China and the USA (34% and 40% respectively), the countries with the highest proportion of renewables are countries with realatively much smaller demand - in fact in 2020, China produced more renewable energy than the entire energy production of the top 5 countries in this dataset with the highest proportion of energy coming from renewables! (Canada, Brazil, France, Sweden & Norway)</p>
+<p>This interactive bar chart shows us the breakdown of energy production for 15 G20 countries between 2000-2020, splitting up total usage between fossil fuels, nuclear and renewables. This graph starts to paint a picture as to why some countries have a much higher share of their total energy usage coming from renewables. Looking at this graph, one may be inclined to view the USA and China as the 'bad guys' in terms of energy usage, and whilst they do use a much higher absolute value of fossil fuels, they also use a much higher absolute value of energy in general - unsurprisingly the two global superpowers have a huge energy demand compared to the other countries in our dataset. Whilst it is still true that the % of total energy consumption that renewables make up is comparatively small for China and the USA (34% and 40% respectively in 2020), the countries with the highest proportion of renewables are countries with relatively much smaller demand - in fact in 2020, China consumed more renewable energy than the entire energy consumption of Canada, Brazil, France, Sweden & Norway combined! In 2020, the entire world consumed 7,493 TWh of renewable energy, whereas China consumed a total 7,624 TWh from all sources - and this is where the problem lies:</p><em> Not even the whole world's renewable energy production could support just China</em>
 </textbox>
 </div>
 

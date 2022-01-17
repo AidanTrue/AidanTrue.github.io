@@ -1,6 +1,6 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "width": 800,
+    "width": 700,
     "height": 300,
     "background":null,
     "title": {
@@ -18,7 +18,7 @@
         {
           "mark": "line",
           "encoding": {
-          "strokeWidth":{"value":1.25},
+          "strokeWidth":{"value":2},
             "y": {
               "field": "ppmv", 
               "type": "quantitative",

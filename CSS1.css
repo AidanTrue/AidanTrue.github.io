@@ -77,3 +77,10 @@ h6 {
 	line-height: 22.4px;
 	color: #ffffff;
 }
+
+em {
+	font-family: "Cabin";
+	font-size: 22px;
+	color: #ffffff;
+	font-weight: 200;
+	margin: 30px;}
