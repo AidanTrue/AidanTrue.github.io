@@ -66,7 +66,7 @@
           "mark": "text",
           "encoding": {
             "y": {"value": 10},
-            "text": {"field": "year", "title":"Year"},
+            "text": {"field": "year"},
             "x":{
               "field":"year",
               "scale":{"domain":[-803719,2001]}

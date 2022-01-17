@@ -2,7 +2,7 @@
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   
   "title": {
-        "text": ["Correlation of CO2 Emissions Per Capita against Renewable Energy as a Percentage","of Total electricity output from renewables in 2020"],
+        "text": ["Correlation of CO2 Emissions Per Capita against Renewable Energy as a","Percentage of Total electricity output from renewables in 2020"],
         "fontSize":17,
         "subtitle": "Source: Global Carbon Project",
         "subtitleFontSize":12,
