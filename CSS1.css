@@ -6,7 +6,7 @@ multi line comment */
 /* CSS files can can also be used to access e.g. fonts */
 
 @import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Playfair Display:wght@400&display=swap');
 /* Format my paragraph */
 p {
     font-family: "Cabin";
@@ -41,7 +41,7 @@ text {
 
 /* Format my headings */
 h1 {
-	font-family: "Cabin";
+	font-family: "Playfair Display";
 	font-size: 60px;
 	color: #ffffff;
 	font-weight: 600;
@@ -50,7 +50,7 @@ h1 {
 
 /* Format my heading */
 h2 {
-	font-family: "Cabin";
+	font-family: "Playfair Display";
 	font-size: 45px;
 	color: #ffffff;
 	font-weight: 400;
@@ -59,7 +59,7 @@ h2 {
 
 /* Format my heading */
 h3 {
-	font-family: "Cabin";
+	font-family: "Playfair Display";
 	font-size: 30px;
 	color: #ffffff;
 	font-weight: 200;

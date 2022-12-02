@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+
+<page>
+
+<! Aidan True, Data Science 2021>
+
+<! //////////// HEAD //////////// >
+
+<head>
+
+    <! These next 3 lines allow Vega to embed>
+    
+    <script src="https://cdn.jsdelivr.net/npm/vega@5.20.2"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.1.1"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.18.2"></script>
+
+<! These lines allow our CSS to format our webpage>
+
+    <link rel="stylesheet" href="UPCSS1.css">
+    <link rel="stylesheet" href="UPindex.css">
+
+</head>
+
+<! //////////// HEAD //////////// >
+
+
+<! //////////// START BODY //////////// >
+
+
+<body>
+    <h1>Data Science: Project</h1>
+    <h2>By Aidan True</h2>
+    <hr>
+
+    <!-- BUTTONS -->
+    <div class="parent">
+    <div class="pagination">
+        <a href="about.html">About</a>
+        <a href="index.html">Portfolio</a>
+        <a class="active" href="project.html">Project</a>
+        <a href="https://github.com/AidanTrue/AidanTrue.github.io" target="_blank">GitHub</a>
+        <a href="https://rapidcharts.io/datascience" target="_blank">Course Information</a>
+      </div>
+    </div>
+    <hr>
+
+    <h2>The Climate Emergency</h2>
+    <h3>Sustainable Energy Transition: Which countries are leading the fight against fossil fuels</h3>
+    <h5>The aim of this project is to highlight the climate emergency, and see who are the main leaders in building a more sustainable future.</h5>
+    
+    <div class="parent">
+        <textbox>
+    <a>This project will focus on Carbon Dioxide (CO2) as the key greenhouse gas to analyse, as the </a><a href=chrome-extension://mhjfbmdgcfjbbpaeojofohoefgiehjai/index.html target="_blank">Intergovernmental Panel on Climate Change</a><a> estimates that Carbon Dioxide accounts for roughly 65% of greenhouse gas emissions.</a>
+</textbox>
+</div>
+   
+    <hr>
+    <div class="parent">
+        <textbox>
+    <h5>“The vast preponderance of evidence, based on years of research conducted by a wide array of different investigators at many institutions, clearly indicates that global climate change is real, it is caused largely by human activities, and the need to take action is urgent”</h5>
+        <a>~Alan Leshner, CEO of </a><a href=https://www.aaas.org/news/aaas-reaffirms-statements-climate-change-and-integrity target="_blank">The American Association for the Advancement of Science</a>
+    </textbox>
+    </div>
+    <hr>
+
+<div class='parent'>
+    <div class='child1'>
+        <p>Introductory Graphs - Setting the scene</p>
+    <div id="chart20">
+        <script>
+            var myChart20 = "Project/Project1_HistoricalCO2.json";
+            vegaEmbed ('#chart20', myChart20);
+        </script>
+    </div>
+    </div>
+    <div class='child1'>
+        <p></p>
+    <div id="chart15">
+        <script>
+            var myChart15 = "Portfolio/Chart15_InteractiveTemp.json";
+            vegaEmbed ('#chart15', myChart15);
+        </script>
+    </div>
+    </div>
+    </div>
+</div>
+<div class="parent">
+    <textbox>
+<p>These first graphs highlight why the climate emergency is just that: an emergency. The first data shows 800,000 years of atmospheric CO2 history, with peaks during the interglacial periods, and troughs during glacial periods. Prior to recent years, the maximum atmospheric CO2 concentration was around 300ppmv. In 1912, that boundary was broken and, from this data, the most recent measure in 2001 puts the atmospheric CO2 at 368 ppmv, a clear and worrying anomaly. Worse still, according to the </a><a href=https://research.noaa.gov/article/ArtMID/587/ArticleID/2742/Despite-pandemic-shutdowns-carbon-dioxide-and-methane-surged-in-2020>National Oceanic and Atmospheric Administration</a><a>, the global average atmospheric carbon dioxide in 2020 was 412.5 parts per million, the highest ever recorded. The second graph shows the temperature anomaly from 1850-2019, relative to the 1961-1990 average temperature. As the graph shows, average temperatures are rising which begs the question: What can we do about it, and who's examples should we follow?</a>
+</textbox>
+</div>
+
+<div class='parent'>
+    <div class='child1'>
+        <p>Scatter & Regression</p>
+    <div id="chart21">
+        <script>
+            var myChart21 = "Project/Project2_CO2vsRenewableRegression.json";
+            vegaEmbed ('#chart21', myChart21);
+        </script>
+    </div>
+    </div>
+</div>
+<div class="parent">
+    <textbox>
+<p>This graph shows the scatter plot of CO2 emissions per capita against renewable energy as a percentage of total electricity output from renewables in 2020. The graph also calculates the R-Squared value of the data, and returns us a value of 0.20. Whilst this may not seem very high, for real-world data it is quite significant - The regression model accounts for 20% of the variance in our data!</p>
+</textbox>
+</div>
+
+<div class='parent'>
+    <div class='child1'>
+        <p>Energy Consumption Breakdown</p>
+    <div id="chart22">
+        <script>
+            var myChart22 = "Project/Project3_EnergyProduction.json";
+            vegaEmbed ('#chart22', myChart22);
+        </script>
+    </div>
+    </div>
+</div>
+
+<div class="parent">
+    <textbox>
+<p>This interactive bar chart shows us the breakdown of energy production for 15 G20 countries between 2000-2020. This graph starts to paint a picture as to why some countries have a much higher share of their total energy usage coming from renewables. From this data, one may be inclined to view the USA and China as the 'bad guys’, and whilst they do consume a higher quantity of fossil fuels, they also consume a much higher quantity of energy in general - unsurprisingly the two global superpowers have a huge energy demand compared to the other countries in our dataset. Whilst it is still true that the % of total energy consumption that renewables make up is comparatively small for China and the USA (34% and 40% respectively in 2020), the countries with the highest proportion of renewables are countries with relatively much smaller demand - in fact in 2020, China consumed more renewable energy than the entire energy consumption of Canada, Brazil, France, Sweden & Norway combined! In 2020, the entire world produced less renewable energy than China consumed in total (7,493 TWh and 7,624 TWh respectively) - and this is where the problem lies:</p><em> Not even the whole world's renewable energy production could support just China</em>
+</textbox>
+</div>
+
+
+<div class='parent'>
+    <div class='child1'>
+        <p>Global Energy Consumption</p>
+    <div id="chart24">
+        <script>
+            var myChart24 = "Project/Project4_GlobalEnergy.json";
+            vegaEmbed ('#chart24', myChart24);
+        </script>
+    </div>
+    </div>
+</div>
+
+<div class="parent">
+    <textbox>
+<p>This final graph visualises the key problem with the current situation - unsustainable growth. As the world becomes more and more developed naturally the demand for energy increases, whether this is supplying more households with electricity or expanding industry & infrastructure, almost everything we do requires electricity. Unfortunately for us, the most tried and tested power comes from non-renewable sources - fossil fuels. Renewable energy sources require huge upfront capital in comparison to the fossil fuel counterparts, and are ultimately less cost-effective and reliable, leading many countries to look short term for their energy needs, and leave the climate as a problem for the future. This has led to the current situation, where the demand for energy is staggering, and there just is not enough sustainable infrastructure to support it.</p>
+</textbox>
+</div>
+<div class="parent">
+    <textbox>
+<h6>So, to answer the question of who the leaders are, we should be looking at countries such as Germany, France and the United Kingdom. All 3 very well-developed countries who are transitioning towards a cleaner energy grid - The UK and Germany with renewables, and France with nuclear power.</h6> <em>These are the power sources of the future, for the future.</h6>
+
+</textbox>
+</div>
+
+<hr>
+<div class="parent">
+    <textbox>
+<p>My main aim for this project was to build a compelling data story, as well as focus on interactivity to encourage others to conduct their own research, as I believe an interactive chart lets the reader focus on the points that interest them, and peaking interest is key to stimulate further work. To create the graphs, I located datasets online, before taking them into Python to format & clean them. I then used the visualising software VegaLite to bring them to life.</p>
+</textbox>
+</div>
+
+<hr>
+
+<div class="parent">
+    <textbox> 
+<p>In-text sources can be found as a hyperlink in the name of the institution that has been cited.</p>
+<p>Wordcount: 835</p>
+</textbox>
+</div>
+
+
+
+
+
+
+
